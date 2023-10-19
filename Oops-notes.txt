@@ -1,0 +1,2843 @@
+Lumen Technologies 
+- We are using java6/java7 version
+- Eclipse Juno
+- not able to see .class files in eclipse juno - not able to add decompiler
+- push all notes on github and use git commands
+
+Total 43
+10 videos completed as of Mar 15
+still 33 complete - still 15 day's remaining
+12 completed
+
+Speed Math for aptitude
+(88)2
+ a2|2ab|b2
+ 64|128|64
+      (128+6)  4
+	  13+6 44
+	  7744 
+- applies with only 2 digit square
+
+-avg of first 10 odd numbers is  = n
+	 
+
+Any desk - remote sharing software in laptop
+
+Tell me about yourself - core java class 2 around 50min
+
+- Go through video.
+- Understand the topic and go through other material topics.
+- Practice and real world examples.
+- Revision(Plays a vital role)
+- ask yourself a question
+
+NOTES
+-In java local var name same but created in different method
+- argument variable and local variable in a method should not be same
+- we can't print anything outside the main method
+-  Constructor will not return any value - Internally void while method return the value
+---
+Question's
+- Most and least significant bits
+- Assignments - MCQ's on & and |
+- static and non static
+----
+Feb 23 Thur  (Aug 27 2023)
+05/10/2020 - 56 min ---Bit wise operator
+ 
+**Course overview (Syllabus) - 5 month's course** 
+
+Full stack
+ - Front end - User Interface
+ - Back end - Business logic
+ 
+- Core Java - 2hrs/day
+- SQL (Mysql, Oracle)
+- Advance Java(J2EE with web technology)
+   Part 1 : HTML, CSS, JS, JSP+JSTL, Servlets, JDBC
+   Part 2 : Spring Boot, Hibernate JPA, WebServices(Restfull)
+         (Deploy application into server(Amazon AWS))
+   Part 3 : Angular 8, React(Front end)
+   
+   - At last resume building, Aptitude(speed math), Regular practice, Presentation classes, Mock Interviews
+
+S/w Testing
+ - Manual testing
+ - Selenium
+
+Price
+18k + 18 % = 21240
+
+Placements
+
+Bitwise operator's in java
+&  and
+|  or
+^  xor
+
+5 & 4
+- Convert first into binary.
+- Most significant and least significant.
+-  T & F = F
+- then convert into decimal
+
+ 5 = 101    = left side 1 is most significant and right side 1 is least significant
+ 4 = 100
+ 
+ 101
+ 100
+ ====
+ 100
+ ====
+ 
+ T =1, F=0
+ T & T = T
+ F & T = F
+ T & F = F 
+ F & F = F 
+ 
+ 164 & 234 = 160
+ 
+  | or  T =1, F=0
+ T | T = T
+ F | T = T
+ T | F = T
+ F | F = F 
+ 
+ 5 | 4  = 5
+ 
+ Mar 27 / 05/10/2020 part 2
+ 4|5&5 - left to right preference (5)
+ 
+ Bitwise & and logical && difference
+ 
+ false & true = after checking false bitwise & it will not check further statement
+ false && true = It will check both statement and give result's
+
+ execution of single & is faster than &&
+
+ true & false || true && true = true 
+ 
+ 4&&5 = will give error  (only works with boolean values)
+ 
+ & - used on decimal
+ && should be used only on boolean values
+ 
+ 4&10|true&&true = error 
+ 
+ xor 
+  1 ^ 1 = 0
+ 1 ^ 0 = 1
+ 0 ^ 1 = 1
+ 0 ^ 0 = 0
+ 
+ 4^5=1
+ 
+ Ternary operator
+ 
+ expression ? "value1" : "value2"
+ ex : String res = (5>3)?"x is greater":"y is greater"
+ 
+ comparision
+ >,<,>=,<=,!=    result always will be in boolean values
+ 
+ Stack Memory
+ ex : plates in hotel
+ 
+ LIFO - last in first out or FILO - first in last out
+ 
+ 
+ Class and object
+ ex: pen manufacture company   machine(Class) & pen(object)
+ 
+ where object created
+ 
+ 
+ - objects are created in heap memory (It's in RAM) 
+ - OS will allocate memory to java and it divide into seperate memory
+ 
+ garbage collection - when heap memory is full(overflow) that time it comes into picture
+ Memory management
+ 
+ Class - It help us to create objects whenever we send a request to class using new keyword.
+ new keyword in java wherever used in program we are requesting a class to create object.
+ Class and new keyword - new keyword help's to create object 
+ 
+ class A{
+ 
+ }
+ 
+ create object
+ new A();  - Every statement ends with semicolon
+ 
+ - class boundaries with flower brackets
+ 
+ Feb 28   (Aug 30)
+ 05/10/2020
+ **
+  object location in heap memory
+  -after the object is created new keyword will get the address of the object and store that in reference variable
+  A a = new A();
+  
+  - Without main method we can't run any program
+  
+class A {
+    public static void main(String[] args) {
+        A a1 = new A();
+        System.out.println(a1);
+        
+        A a2 = new A();
+        System.out.println(a2);
+    }
+}
+
+o/p
+A@5a07e868
+A@76ed5528
+
+Heap Memory  - 2 parts
+
+nursery memory(new objects) and old memory(old objects)
+
+GC
+- objects in use and objects not in use  and GC will check unused objects in heap and removes all the objects hence we get free space
+
+
+When we shutdown and restart the server performance will be slow
+
+when we shutdown the system objects will be flushed out
+
+A a1 = new A();
+- object address stored in reference a1 variable and it's in use
+
+a1=null;
+-reference to object is removed(memory address removed)
+
+unused objects it means - object without any reference
+
+class A {
+    public static void main(String[] args) {
+        A a1 = new A();
+        System.out.println(a1);
+        
+       a1=null;
+       System.out.println(a1);
+    }
+}
+
+o/p
+A@5a07e868
+null
+
+
+The program execution follows stack 
+- Main method loaded into stack.
+- objects are created in heap memory.
+- when main method execution done it will remove from stack memory.
+
+Static and non static
+
+- wherever object created non static memebers(belongs to object) loaded into object.
+
+
+common memory/permgen/meta space
+- static members loaded into above memory and belong to Class
+
+class A{
+static int i = 10;
+int j=20;
+psvm()
+{
+ A a1=new A();
+}
+}
+
+how to access members from object - without creating an object non static members cannot be accessed
+  a1.j
+
+we should not create static in main method else throw an error 
+
+
+class A {
+       static int i = 10;
+        int j = 20;
+    public static void main(String[] args) {
+     
+        A a1 = new A();
+        System.out.println(a1.j);
+        
+       
+       System.out.println(A.i);
+    }
+}
+
+o/p
+20
+10
+
+** common made mistake 
+- static variables value can be changed?  - yes will be able to change the value
+
+class A {
+       static int i = 10;
+    public static void main(String[] args) {
+     
+       System.out.println(A.i);
+       A.i=100;
+       System.out.println(A.i);
+    }
+}
+
+o/p
+10
+100
+
+March 1   --- Aug 31 2023
+06/10/2020 - Part 2 
+
+Static 
+- static variable loaded only once in class common memory(meta space).
+- value can be changed but value remains same throughout program.
+- will copy once
+
+non static 
+- Xerox is happening
+- Whenever objects are created non static members loaded into the object's 
+
+class A {
+    int i=10;
+    public static void main(String[] args) {
+        A a1=new A();
+        System.out.println(a1.i);
+        a1.i=100;
+        System.out.println(a1.i);
+        A a2=new A();
+        System.out.println(a2.i);
+    }
+}
+
+o/p
+10
+100
+10
+
+Access: Non-static members can be accessed only through an object of the class, whereas static members can be accessed directly using the class name.
+Memory allocation: Non-static members are allocated memory for each object created from the class, whereas static members are allocated only once for the entire class.
+Lifetime: Non-static members have a lifetime that is dependent on the lifetime of the objects created from the class, whereas static members exist for the entire lifetime of the program.
+Scope: Non-static members have a scope that is limited to the objects created from the class, whereas static members have a scope that extends to the entire program.
+
+
+class A {
+    int i=10;
+    int k=30;
+    static int j=20;
+    public static void main(String[] args) {
+        A a1=new A();
+        System.out.println(a1.i);
+        System.out.println(a1.k);
+        a1.i=50;
+        System.out.println(a1.i);
+        A a2=new A();
+        System.out.println(a2.i);
+        System.out.println(a2.k);
+    }
+}
+
+o/p
+10
+30
+50
+10
+30
+
+jdk 1.7 or jdk 7 -- current jdk 17
+
+jdk 1.10 or jdk 10 - 2018
+
+Types of varibales in java
+- local variable
+- static varible
+- reference variable
+- non static variable
+
+local variable
+
+main method run on it owns - built in method 
+call back method(main method only we call call back method) also run on it's own 
+
+user defined method
+
+Non static 
+
+stack is responsible for program execution flow. 
+
+class A
+{
+ p.s.v.m()
+ {
+ A a = new A();
+ a.test();
+ }
+ 
+ public void test()
+ {
+  s.o.println(500);
+ }
+}
+
+//
+500
+
+numbers can be print without "" quotes in sop.
+
+Mar 2 
+static 
+
+class A {
+   
+    public static void main(String[] args) {
+        System.out.println(500);
+        A.test();
+    }   
+        
+        public static void test()
+        {
+            System.out.println(10);
+        }
+
+}
+o/p
+500
+10
+
+- In this there is no need to create object and heap memory is not there.
+- through class A.test() we can access the method, method return type should be static.
+- Same main method loaded into the stack first and print 500 and test method loaded into the stack print 10 and once test method execution done it will pop out from stack and main method also popped out of stack.
+
+
+
+class A {
+   
+    public static void main(String[] args) {
+        A a1=new A();
+        a1.test1();
+        System.out.println(100);
+        
+    }   
+        public void test1()
+        {
+            A a2=new A();
+            a2.test2();
+        }
+         public void test2()
+        {
+          System.out.println(500);
+        }
+
+}
+
+o/p
+500
+100
+
+- Understand the execution of program 
+
+*7/10/2020 - March 2
+
+- Everything part of method loaded into the stack.
+- int x loaded into the stack 
+- object is created in heap but object refernece is present in stack 
+class A
+{
+p.s.v.m()
+{
+A a1 = new A();
+a1.test(500);
+}
+
+public void test(int x)
+{
+  s.o.println(x);
+}
+//
+500
+
+- keywords are written in small letters
+- Class in java always starts with capital letter
+Variables
+
+local variable
+ - should be present inside the method .
+ - local variable only accessed in that method only. 
+ - local var loaded into stack memory. 
+ 
+ class A {
+   
+    public static void main(String[] args) {
+        A a1=new A();
+        a1.test1();
+       
+    }   
+        public void test1()
+        {
+          int x=10;
+          System.out.println(x);
+        }
+
+}
+
+o/p
+10
+
+- In java local var name same but created in different method
+
+class A {
+   
+    public static void main(String[] args) {
+        int x=10;
+        System.out.println(x);
+        A a1=new A();
+        a1.test1();
+       
+    }   
+        public void test1()
+        {
+          int x=100;
+          System.out.println(x);
+        }
+
+}
+
+o/p 
+10
+100
+
+- argument variable and local variable in a method should not be same 
+ 
+class A {
+   
+    public static void main(String[] args) {
+        int x=10;
+        System.out.println(x);
+        A a1=new A();
+        a1.test1(100);
+       
+    }   
+        public void test1(int x)
+        {
+          int x=100;
+          System.out.println(x);
+        }
+
+}
+
+o/p
+Error will get 
+
+local variable should be initialized at the time of declaration.
+
+class A {
+   
+    public static void main(String[] args) {
+        int x=10;
+        System.out.println(x);
+        A a1=new A();
+        a1.test1();
+       
+    }   
+        public void test1(int x)
+        {
+          int x=100;
+           System.out.println(x);
+        }
+
+}
+
+//Error 
+
+class A {
+   static int x;
+    public static void main(String[] args) {
+        //int x;
+        System.out.println(x);
+     }  
+}
+
+//
+0
+
+void  (keyword)
+- If a method is void it will not return any value 
+
+tools Eclipse, STS, Visual studio 
+
+- If you want return then matching return type should be used 
+
+
+class A {
+   
+    public static void main(String[] args) {
+        A a1=new A();
+        int x = a1.test1();
+         System.out.println(x);
+       
+    }   
+        public int test1()
+        {
+          return 100;
+        }
+
+}
+
+//100
+
+
+return value; is different from return;
+
+return; - from where it called back (optional)
+
+ public void test1()
+        {
+          return;  - return the control back to called method 
+        }
+		
+- Never write anything after return keyword 
+
+ public void test1()
+        {
+          return;  - return the control back to called method 
+		  System.out.println(100); // error i.e unreachable statement 
+        }
+
+--string args-- 
+
+class A {
+   
+    public static void main(String[] args) {
+        A a1=new A();
+       a1.test1(100,200,300,400);
+   
+    }   
+        public void test1(int... x)   // An array 
+        {
+         System.out.println(x[0]);
+         System.out.println(x[1]);
+         System.out.println(x[2]);
+         System.out.println(x[3]);
+        }
+
+}
+
+o/p
+100
+200
+300
+400
+
+ - Mar 4  07/10/2020
+Array 
+ - when we create an array in java an object gets created. 
+ - Array's are creted to store collection of values.
+ 
+ int[] a1 = new int [3]
+ - It will create the object and reference a1 variable in stack and in objects there are 3 parts as we mentioned size 3
+
+class A {
+   public static void main(String[] args) {
+       int a[]=new int[3];
+         System.out.println(a);
+    }
+
+}
+
+o/p
+[I@5a07e868
+
+
+- size of each int block is 4 bytes.
+- starting address+memory size*index 
+   20+4*0 = 20
+   20+4*1= 24
+- Values accessed in array using index number.
+
+- Normal way of printing
+
+class A {
+   
+    public static void main(String[] args) {
+       int a[]=new int[3];
+       a[0]=10;
+       a[1]=20;
+       a[2]=30;
+       System.out.println(a[0]);
+       System.out.println(a[1]);
+       System.out.println(a[2]);
+    }
+
+}
+
+o/p
+10
+20
+30
+
+- Using for loop
+
+class A {
+   
+    public static void main(String[] args) {
+       int a[]=new int[3];
+       a[0]=10;
+       a[1]=20;
+       a[2]=30;
+       for(int i=0;i<3;i++) // initialization;condition;increment/decrement
+       {
+       System.out.println(a[i]);
+       }
+   
+    }
+
+}
+o/p
+10
+20
+30
+
+-In a reverse order 
+
+class A {
+  public static void main(String[] args) {
+       int a[]=new int[3];
+       a[0]=10;
+       a[1]=20;
+       a[2]=30;
+       for(int i=2;i>=0;i--)
+       {
+       System.out.println(a[i]);
+       }
+    }
+}
+o/p
+30
+20
+10
+
+-Using inbuilt method length 
+class A {
+  public static void main(String[] args) {
+       int a[]=new int[3];
+       a[0]=10;
+       a[1]=20;
+       a[2]=30;
+       for(int i=0;i<a.length;i++)
+       {
+       System.out.println(a[i]);
+       }
+    }
+}
+
+o/p
+10
+20
+30
+
+- In for loop if there is only 1 statement then there is no required of bracket.
+
+int[] a={10,20,30,40,50};
+
+array need to be initialized else we will get error
+
+int[] a; //error
+
+int[] a = {} ; // length is 0
+
+class A {
+  public static void main(String[] args) {
+       int a[];
+       System.out.println(a.length);
+    }
+}
+
+o/p 
+error: variable a might not have been initialized
+
+class A {
+  public static void main(String[] args) {
+       int a[]={};
+       System.out.println(a.length);
+    }
+}
+
+o/p 
+0
+
+special loop created 
+ foreach
+ 
+ 
+For local variable where I'm not initializing there we will not get error where we are using there it will give error.
+
+class A {
+  public static void main(String[] args) {
+       int i;
+       for(i=0;i<10;i++)
+       {
+       System.out.println(i);
+       }
+       System.out.println(i);
+    }
+}
+
+o/p
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+08/10/2020 Mar 4
+*** 
+Installation of eclipse 
+  - Installation of jdk 8 (all compatible at version 8 selenium,spring,hibernate)
+  
+ JDK JRE 
+  - Jdk has compiler and provide run time env for execution of program.
+   JDK = Compiler + JRE
+  
+ Earlier Java belongs to sun-microsystem and after acquired by oracle.  - James Gosling
+ 
+ jdk 8 install
+ download eclipse enterprise edition
+ 
+ link java with eclipse
+  window - preferences - Installed JRE  
+   add - standarvm - browse jdk - we need to copy till bin(exclude bin)
+   
+Shortcuts in eclipse
+ Ctrl +  N = new wizard window
+ 
+ whatever java files should present in src folder(Source)
+ 
+ main 
+ sysout = ctrl + spacebar 
+ 
+ for each loop - created exclusive for array's only 
+ 
+ public class Loop {
+	
+	public static void main(String[] args) {
+		
+		int a[] = {10,20,30};
+		
+		for(int i:a)  //using for each loop it copy a into normal variable i
+		{
+			System.out.println(i);
+		}
+	}
+
+}
+
+o/p
+10
+20
+30
+ 
+ int a[] = {10,20,30,40};
+ 
+ for (int i : a)
+ sysout(i); //It copy array element in ordinary var i. 
+ 
+ - one object has many references 
+ 
+public class A {
+
+	public static void main(String[] args) {
+		
+		int x[] = {10,20,30,40};
+		
+		A a = new A();
+		a.test(x); //passing address of x and not the array values
+		System.out.println(x[0]);
+	}
+	// x and y pointing same object
+		public void test(int[] y)
+		{
+			y[0]=1000;
+			System.out.println(y[0]);
+		}
+
+}
+
+o/p 
+1000
+1000
+
+String args 
+
+main method we can configure by run as 
+
+command line args - during run time we supply args to main method which is being stored in string args array 
+
+run - run configuration - pass arguments
+kiran  
+kiran pavan 
+
+public class Args {
+
+	//Command Line Argument 
+	// run - run configuration - pass arguments
+	public static void main(String[] args) {
+		System.out.println(args[0]);
+		System.out.println(args[1]);
+	}
+
+}
+
+o/p
+kiran
+pavan
+
+- If we are not passing any args through command line it will throw error array index out of exception while accessing elements.
+
+Mar 5 08/10/2020 Part 2
+***
+Singature of main method 
+
+public static void main(String[] args)
+ - args may be anything we can use any variable name it will work 
+ 
+public static void main(String[] x)
+
+brackets can be interchanged
+public static void main(String[] args)
+
+public static void main(String args[])
+
+another way we represent bracket 
+public static void main(String... args)
+
+we can interchange static it will work  and if we remove either static or public it wont run
+static public void main(String[] args)
+
+
+break;
+continue; 
+labeld break;
+
+break 
+ - none of the statements execute further break in that loop.
+ 
+ ctrl + shift + F = format text(alignment)
+ 
+ public class Statements {
+
+	public static void main(String[] args) {
+		
+		for(int i=0;i<10;i++)
+		{			
+			if(i==5)
+			{
+			break;
+			}
+			System.out.println(i);
+		}
+		System.out.println("After break it will not execute statement");
+
+	}
+
+}
+
+o/p
+0
+1
+2
+3
+4
+After break it will not execute statement
+
+continue;
+public class breakstatement {
+ //while it hit continue control goes back to for loop and skip.
+	public static void main(String[] args) {
+		for(int i=0;i<10;i++)
+		{			
+			if(i==5)
+			{
+				continue;
+			}
+			System.out.println(i);
+		}
+		System.out.println("It will skip the i=5");
+
+	}
+
+	}
+	
+o/p
+0
+1
+2
+3
+4
+6
+7
+8
+9
+It will skip the i=5
+
+
+break label: it will skip only if block and remain further code in for loop
+
+for(int i=0;i<10;i++)
+		{			
+			label:if(i==5)
+			{
+				break label;
+			}
+			System.out.println(i);
+		}
+		System.out.println("It will skip the i=5 if block only and run remaining" );
+	}
+	
+o/p
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+It will skip the i=5 if block only and run remaining
+
+- If we applied on for loop it comes out of for loop - It will comeout of for loop & execute remaining
+
+if block
+
+ctrl + 1 = auto suggestion solution
+
+	public static void main(String[] args) {
+		int x=10;
+		int y=20;
+		
+		if(x>y)
+		{
+			System.out.println("x is greater");
+		}
+		else
+		{
+			System.out.println("y is greater");
+		}
+
+	}
+	
+o/p
+y is greater
+
+you can't compare number with string and you can compare float with int because both are belongs to number category
+
+	int x = 20;
+		int y = 20;
+		if(x<y)
+		{
+			System.out.println("x is smaller");
+		}
+		else if (x>y) {
+			System.out.println("x is greater");
+		}
+		else if (x==y) {
+			System.out.println("x is equal to y");
+		}
+		else {
+			System.out.println("none of the condition satisfy and execute else block");
+		}
+		
+o/p
+x is equal to y
+
+Switch 
+ - break it will break out switch statement 
+ 
+	int key = 2;
+		switch (key) {
+		case 1:
+			System.out.println("print 100");
+			break;
+		case 2:
+			System.out.println("print 200");
+			break;
+		case 3:
+			System.out.println("print 300");
+			break;
+		default:
+			System.out.println("print 400");
+			break;
+		}
+		
+o/p
+print 200
+
+- If we are not giving break statement, it will print everything
+	int key = 1;
+		switch (key) {
+		case 1:
+			System.out.println("print 100");
+//			break;
+		case 2:
+			System.out.println("print 200");
+//			break;
+		case 3:
+			System.out.println("print 300");
+//			break;
+		default:
+			System.out.println("print 400");
+//			break;
+		}
+		
+o/p
+print 100
+print 100
+print 200
+print 300
+print 400
+
+While
+
+	int i = 0;
+		while(i<3)
+		{
+			System.out.println(i);
+		}
+o/p
+runs infinite loop
+ - Scenario for while and for loop example
+why while loop?
+ - 
+ 
+
+	int i = 0;
+		while(i<3)
+		{
+			System.out.println(i);
+			i++;
+		}
+o/p
+0
+1
+2
+
+do while 
+
+	int i=0;
+    do {
+		System.out.println(i);
+		i++;
+	} while (i<3);
+o/p
+0
+1
+2
+
+09/10/2020 - Part1 to watch Mar 7  Sept 3 2023 
+* Constructor and stack memory 
+ - Java 8 
+   - all Variable allocated memory in metaspace(does not belong to stack(Program execution flow))
+   - objects are created in heap, it will store the reference varible in stack and fetch values from metaspace
+
+class A
+{
+ static int i=5;
+    int j =10 ;
+PSVM()
+{
+  s.o.p(A.i);
+  A a = new A();
+  s.o.p(a.j);
+}
+
+}
+//
+5
+10
+
+
+-static(global we will not call in java global variable)
+
+-static var and local var name same? Yes
+
+    static int i=10;
+	public static void main(String[] args) {
+	 int i= 5;
+	 StaticVsNonStatic a = new StaticVsNonStatic();
+	 System.out.println(StaticVsNonStatic.i);
+	 System.out.println(i);
+	 
+o/p
+10
+5
+
+
+static                                                                                                                         non static
+-auto intilization(not mandatory to intilize static var. If we do not initialization depending on data type default value would get store in it)
+-belongs to class
+-cannot create inside main method
+
+static int j;
+	public static void main(String[] args) {
+		
+		System.out.println(A.j);
+
+}
+
+o/p
+0
+
+local variables
+ - If local variable of if block scope then we can't use outside the block
+ 
+      if(i==10)
+         {
+        	 String var = "red";
+         }
+         System.out.println(var);
+		 
+o/p 
+will give error
+
+- Non static var created outside method and inside the class without static keyword.
+- without creating the object we can't access the non static variables
+- It is not mandatory to initialize non static variables, if we do not initialize depending on the data type default value get store in it.
+- local and non static var name can be same
+
+public class DeclareStatic {
+     static int i;//If we declare static var without initilisation it will not give error
+	int k=5; // until and unless you will not create object of class u will not able to access non static var
+    int m; 
+	public static void main(String[] args) {
+		System.out.println("kiran"); 
+        System.out.println(DeclareStatic.i);
+        DeclareStatic a =  new DeclareStatic();
+        System.out.println(a.k);
+        System.out.println(a.m);
+	} 
+	static int j;//we need to declare outside main method & anywhere in the program
+	//System.out.println("kiran");//we can't print anything outside the main method
+}
+
+o/p
+kiran
+0
+5
+0
+
+Constructor 
+ - Constructor name should be same as class name.
+ - Constructor are similar to method's.
+ - when object is created constructor will be called. 
+ - We can write constructor after main also recommended before main method
+ - number of times you create the object that many times constructor being called.
+ 
+public class Constructors {
+
+	 Constructors() {
+		System.out.println("kiran");
+	}
+	public static void main(String[] args) {
+		
+		Constructors var = new Constructors();
+		
+		Constructors var1 = new Constructors();
+
+	}
+
+}
+
+o/p
+kiran
+kiran
+
+public class A {
+
+	 A(int i)
+	 {
+		 System.out.println("i");
+	 }
+	public static void main(String[] args) {
+	A a = new A(1000); //Passing the argument while calling constructor
+
+	}
+
+}
+o/p
+1000
+
+part 2 09/10/2020 - Mar 9
+
+ - Constructor will not return any value - Internally void while method return the value
+ 
+ 
+Constructor overloading
+- Same method name with different arguments - if same arguments will give error.
+- whenever we create more than one constructor 
+
+public class A1 {
+
+	A1()
+	{
+		System.out.println("default constructor");
+	}
+	A1(int i)
+	{
+		System.out.println("single args:"+i);
+	}
+	
+	A1(int i, int j)
+	{
+		System.out.println(i);
+		System.out.println(j);
+	}
+	public static void main(String[] args) {
+		// Constructor overloading
+		
+		A1 a = new A1();
+		A1 a1 = new A1(100);
+		A1 a2 = new A1(200,300);
+
+	}
+
+}
+o/p
+single args:100
+200
+300
+
+- we can have same arguments with different data type.
+
+	A2(int i)
+	{
+		System.out.println(i);
+	}
+	A2(char i)
+	{
+		System.out.println(i);
+	}
+	public static void main(String[] args) {
+     A2 a = new A2(100);
+     A2 a1 = new A2('a');
+     
+
+	}
+	
+o/p
+100
+a
+
+Mar 10
+Read inputs from keyboard
+- Scanner is built in class. (you will find in jdk) - ext folder is very important in java contains the jar with all the classes.
+- System.out - prints the output
+- System.in - reads the inputs
+- sc.next(); //non static method //reads input from the keyword - while hitting the keyboard and take only single word
+- sc.nextInt(); //takes input from keyboard as a integer 
+- sc.nextLine(); //takes input from keyboard as a string whole line.
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your name: ");
+		
+		String name = sc.next(); //reads input from the keyword - while hitting the keyboard and take only single word
+        System.out.println(name);
+        System.out.println("my name is:"+name); //string concatenation
+        System.out.println("Enter your age");
+        int age = sc.nextInt();
+        System.out.println("my age is:"+age);
+        System.out.println("enter full name");
+        String full_name=sc.nextLine();
+        System.out.println("my full name is:" + full_name);
+	}
+o/p
+Enter your name: 
+kiran
+kiran
+my name is:kiran
+Enter your age
+20
+my age is:20
+enter full name
+my full name is:
+
+//It will not read the sc.nextLine();
+
+System.in - input streaming
+System.out - output Streaming
+Passing parameter System.in to Scanner class.
+
+Mar 15 
+ - Simple project using loops. ATM
+    -Number of iteration we know then use for loop.
+ 
+ when to use for and while loops?
+  - enter a ATM and enter a valid pin number and invalid pin say invalid pin number and once again enter pin - 3 maximum trials.
+  - Valid and print welcome and stop.
+  - Invalid, then enter pin stops.
+ 
+ Scenarion:
+  		//Read input pin number from user if it is equal to 1234 print welcome else Invalid pin number
+		//read input 3 times use for loop and after first pin valid stop and after 3 time print card is blocked
+  
+public class ATM2 {
+
+	public static void main(String[] args) {
+		//Read input pin number from user if it is equal to 1234 print welcome else Invalid pin number
+		//read input 3 times use for loop and after first pin valid stop and after 3 time print card is blocked
+		Scanner sc = new Scanner(System.in);
+		
+		for(int i=0;i<3;i++)
+		{
+			System.out.println("Enter a pin number");
+		int pinNumber = sc.nextInt();
+		System.out.println("pinNumber:"+pinNumber);
+		if(pinNumber==1234)
+		{
+			System.out.println("Welcome");
+		    break;
+		}
+		else
+		{
+			System.out.println("Invalid Pin Number");
+		if(i==2)
+			System.out.println("card is blocked");
+		}
+		}
+	}
+
+	}
+
+- System date - Locale
+- Infinite loop 
+    for(;;)
+---------------------------------------------------------STOP (Revise - Practice)----------------------------------------------
+Next video to watch - 10/10/2020   - Sept 5 
+** Second Scenario - Withdraw money 
+ While loop usage 
+  - if you don't know number of iteration go with while loop
+  
+  use inbuilt method for comparision of strings
+   .equals("");
+  
+
+	//Take user input to withdraw money, if wanted no stop it else withdraw continuously if yes
+				//It will print infinite loop
+		//if yes then only withdraw else stop it and prints stop 
+				Scanner sc = new Scanner(System.in);
+				String condition = "yes"; 
+				while(condition.equals("yes"))
+				{
+					System.out.println("Enter money to withdraw:");
+					sc.nextInt();
+					System.out.println("You want to withdraw money:(yes/no)");
+					condition = sc.next();
+					if(condition.equals("no"))
+						System.out.println("Thank you!");	
+				}
+				
+  
+ Constructor's 
+ - access specifier we can write but you can't write void then it's a method.
+ - Constructors will get automatically called when you create object and method will not be called when you create object you need to explicitly call the method.
+ 
+  //It's a method you need to call explicitly
+	 void B()
+	{
+		System.out.println("It's a method now");
+	}
+	public static void main(String[] args) {
+		
+		
+		B a = new B();
+
+	}
+	
+ //It's a constructor will call automatically 
+	  B()
+	{
+		System.out.println("It's a constructor now");
+	}
+	public static void main(String[] args) {
+		
+		
+		B a = new B();
+
+	}
+
+}
+
+o/p
+It's a constructor now
+
+- We can write main class, main method, user defined main and variable main it will not give a error
+public class main {
+	main()
+	{
+		System.out.println("Constructor");
+	}
+
+	public static void main(String[] args) {
+		String main = "main";
+		main m = new main();
+		main();
+
+	}
+	
+	public static void main()
+	{
+		System.out.println("TWO");
+	}
+
+}
+
+0/p
+Constructor
+TWO
+
+Mar 16
+12/10/2020
+***
+ Reference variable
+ 
+ data type variable name assignment operator value
+ int x = 10;
+ long y = 10L;
+ 
+ datatype for reference varible is class name
+ A a = new A(); //not only create object also store the object address.
+ //don't store oridinary values in reference variable
+ 
+ Types of reference variable
+ static
+ local 
+ 
+ local reference variable 
+   - These variable are created inside the method and restricted to be used only within created method
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ReferenceVar a = new ReferenceVar();
+		System.out.println(a);
+		
+
+	}
+	
+o/p
+variables.ReferenceVar@15db9742
+
+-address will be in hexadecimal value
+-local reference var if used without intilizing it, then it will give error.
+ A a1;
+ sysout(a1);
+
+public class ReferenceVar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ReferenceVar a = new ReferenceVar();
+		System.out.println(a);
+		a.test();
+
+	}
+	
+	public void test()
+	{
+		System.out.println(a);
+	}
+
+}
+
+o/p
+will give error 
+
+
+comment
+select + ctrl + /
+
+static reference variables
+ - This variables created outside method and inside the class using static keyword
+    Static A a = new A();
+ - Static reference var having global access. 
+ 
+public class StaticReference {
+
+	 static StaticReference a = new StaticReference();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		System.out.println(a);
+	}
+	
+o/p
+variables.StaticReference@15db9742
+
+- If we do not initialize static reference variable default null value is stored in it.
+	static StaticReference a1; //null
+	 static StaticReference a = new StaticReference();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		System.out.println(a);
+		System.out.println(a1);
+	}
+o/p
+variables.StaticReference@15db9742
+null
+
+Data types in java
+-Strongly typed & non Strongly typed language
+  strongly typed - we should define the data type of variable and store the same data type (we can't store string in integer datatype)
+
+-script(JS) vs lanaguage(Java)
+ - scripting language runs inside the browser
+ - Java back end runs on jdk installed.
+     
+	   default values   Memory size 
+byte  0                   1 
+short 0                   2 
+int   0                   4 
+long     0                8         - stores number
+float   0.0               4 
+double    0.0             8         - stores decimal values 
+char      empty           2 
+boolean  false           N/A - not applicable
+
+- varible name only $, _ (special character can be used)
+- camelcase ex:rollNumber, age 
+- method in camelcase and parenthesis rollNumber();
+- class should starts with capital letter Bank();
+
+static String s; //static reference variable with default value is 0
+
+- no default values for local variables
+- default values for static and non static variables
+
+
+float i = 10.3f
+long x = 100l
+
+- Values are called in java literals
+
+Var type 
+ - It will not work in jdk 8, 9 and in 10 it works 
+ - we can store any values in var type
+   var x = 10;
+   var y = 10.5f;
+   var z = "kiran";
+   var k = new A();
+   var m = true;
+
+-python is good for machine automation.
+
+- we can't use variable name as keyword else it will give error
+  var var = 10;
+  sysout(var);
+  
+ 12/10/2020 - Part 2
+ Mar 18 2023
+ -limitation of var 
+   - cannot be static, non static and argument
+   - only for local variable
+   
+public class VarData {
+
+	static var x = 10;
+	var i = 10.3;
+	public static void main(String[] args) {
+		//var cannot be static and non static variable
+
+	}
+//Will get error 
+
+Maximum memory size of var and min - elastic in nature
+ min size of var  = 4 bytes and maximum = 8 bytes
+ 
+ 
+ Type Casting(converting one datatype to another) and wrapper class 
+   - Variable type casting
+   - Class casting
+   
+   Analogy: shifting of house 1bhk to 4bhk
+      upcasting - automated  (converting smaller data type to bigger data type)
+	  downcasting - we need to explicitly say 
+	  
+- Every data types belong to the wraper class 
+
+  int i = 10; //int 4 bytes
+  
+  long j = i; //long 8 bytes assigning integer value to long //auto upcasting
+  
+  float x = 10; //fine
+  float y = 10.3f //we need to terminate with f
+  
+  downcasting (explicit down casting)
+   - what if data loss happens
+        long i = 101l;
+		int j = i;
+	//we will get error, first we need to explicitly say to compiler to smaller data type.
+	
+	long i = 101l;
+		int j = i;
+
+long i = 101l;
+		int j = (int) i;
+		System.out.println(i);
+        System.out.println(j);
+//
+101
+101		
+
+NOTE: During upcasting data loss is not allowed
+  ex: 
+     float f = 10.3f;
+	 long j = f;
+//we will get error because we can't store decimal in long
+
+2. During explicit downcasting data loss might happen
+  below is upcasting no memory comes into the picture
+   long i =10l;
+   float j = i;
+   
+   //no error print 10.0 and no data loss compiler will not give any error 
+   
+ 13/10/20 - Mar 19
+   int to float = no data loss and kind of upcasting & memory size not comes in consideration
+
+	byte i = 10;
+    var j = i;
+//upcasting print 10 and var will be supported by jdk 10
+
+  	var i = 10;
+    byte j = i;
+//wil get error, we need to explicitly downcast
+
+var i = 10;
+    byte j = (byte)i;
+//print 10
+
+var into long = works
+
+Unicode - Name the character we will have unique unicode 
+ - similar to ascii values(for every alphabet there is a integer values) - compiler will convert into binary. 
+   A - Z = 65 - 90
+   a - z = 97 - 122 
+   0 - 9 = 48 - 57 
+
+- It also kind of type casting and only applicable for characters
+int i = 'a';
+		System.out.println(i);
+		int j = 'A';
+		System.out.println(j);
+		int k = '0';
+		System.out.println(k);
+		
+o/p
+97
+65
+48
+
+Note : byte + byte = will return integer 
+       byte * byte = will return integer
+
+byte i =10;
+byte j =20;
+byte k = i+j;
+
+//will give error
+
+byte i =10;
+byte j =20;
+int k = i+j;
+//30
+
+byte i =10;
+byte j =20;
+byte k = (byte)(i+j);
+
+//will not give error but data loss will happens -56
+
+Summary
+-Auto upcasting
+-explicit downcasting
+-unicode
+-(byte+byte), (byte*byte) = Integer value  
+
+Constructor continuation
+ 
+  Structure of java program
+   A.java -----Unicode----> A.class----run---> o/p
+   
+   src - source
+   bin - binary(byte code)
+   
+   In src folder java class present it will compile and put into bin folder
+   - In eclipse when we save it will get auto complied and put into bin folder
+   
+   -when we run the class it will pick from bin folder and run the file 
+
+- Whenever we create a object, Constructor should be there(default)
+ - If we are creating object with no args then there is no need to explicitly write constructor - will create by default 
+ 
+ new  (DefaultConstructor con = new DefaultConstructor();)
+  - send's a request to class to create object.
+  - store the address of variable in reference variable.
+  - has to call the constructor.
+  
+  new classname(); // fine in sysout we can print but it will not store address in reference varibale 
+  
+  - If we got warning it will not stop the program and when we do usage of that variable the warning will be gone.
+ 
+13/10/2020 - Part 2
+
+Setters and getters
+ - we are creating a variable and we want to operate on that variable through method 
+   direct operate
+     String name = "kiran";
+	 
+- POJO - plain old java objects
+
+public class A {
+	String name;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public static void main(String[] args) {
+		A a = new A();
+		a.setName("kiran");
+		System.out.println(a.getName());
+		
+
+	}
+
+}
+
+o/p
+kiran
+
+**This keyword in java
+ - this keyword is special reference varibale that hold's object address, which is automatically created by java compiler.
+ 
+    A a = new A();
+	  sysout(a);
+	  sysout(this);
+	  
+o/p
+same address will print
+
+public class B {
+
+	public static void main(String[] args) {
+	   B a = new B();
+	   a.test();
+       System.out.println(a);
+	}
+
+	private void test() {
+		System.out.println(this);
+		
+	}
+
+}
+
+o/p
+com.getter.setter.B@15db9742
+com.getter.setter.B@15db9742
+
+this can't be accessed in static method
+
+limitation's of this keyword
+ - never use this keyword inside static method.
+ - inside static method this keyword is not added automatically.
+
+public class This {
+    int i = 10;
+	public static void main(String[] args) {
+		 This a = new This();
+		 a.test();
+		 System.out.println(a.i);
+
+	}
+//	private void test() {
+//		System.out.println(i); //by default it is this.i
+//		
+//	}
+	
+	public static void test() {
+		System.out.println(i); 
+		
+	}
+
+}
+
+o/p
+Error 
+
+this keyword points to current object running in your program 
+ - which ever object is in use it will associated with this keyword.
+ - never access local variable using this keyword will give error(this keyword meant to access non static variable and static variable).
+ - It is advised not access static varibale using this keyword, however it will work.
+public class This1 {
+
+	public static void main(String[] args) {
+		This1 a = new This1();
+		a.test();
+		This1 a1 = new This1();
+		a1.test();
+
+	}
+
+	public void test() {
+	 System.out.println(this);
+		
+	}
+
+}
+
+o/p
+com.getter.setter.This1@15db9742
+com.getter.setter.This1@6d06d69c
+
+
+	public void test() {
+		int j = 10;
+		 System.out.println(this.j);
+			
+		}
+		
+//will give error 
+
+14/10/2022 Mar 20
+ -Part 2 of this keyword 
+   -call using another way calling constructor using this keyword 
+     this - used to call non static variables
+	 this() - used to call constructor (it will work when we call from another constructor)
+	 
+public class This {
+	public This() {
+		System.out.println(100);
+	}
+	
+	public This(int i) {
+		this();
+	}
+
+
+
+	public static void main(String[] args) {
+		
+		This a = new This(100);
+
+	}
+
+}
+
+o/p
+100
+
+- this keyword cannot be second statement when we calling a constructor using this() we will get error.
+
+public This(int i) {
+         System.out.println(100);
+		this();  //It will call the constructor
+	}
+	
+//we will get error
+
+Passing argument to this keyword 
+
+public class C {
+
+	C()
+	{
+		this(200);
+		System.out.println(100);
+	}
+	public C(int i) {
+		System.out.println(200);
+	}
+	public static void main(String[] args) {
+		 C a = new C();
+
+	}
+
+}
+
+o/p
+200
+100
+
+
+In eclipse
+  local variable - brown in colour
+  non static - blue without italics  
+  
+public class A3 {
+       int i;
+       String name;
+	public static void main(String[] args) {
+		A3 a = new A3();
+         a.test();
+	}
+	private void test() {
+		int i = 100;
+		String name = "kiran";
+		this.i=i;
+		this.name=name;
+		System.out.println(this.i);
+		System.out.println(this.name);
+		
+	}
+
+}
+
+o/p
+100
+kiran
+
+POJO classes
+ - we are not directly accessing the variable and intilizing - we need to access with method - getters and setters
+ - directly avoiding for security purpose. 
+public class POJO {
+
+	 String name;
+	public String getName() {
+		return name; //automatically added this.name 
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public static void main(String[] args) {
+		POJO a = new POJO();
+		a.setName("kiran");
+		System.out.println(a.getName());
+		
+	}
+
+}
+
+o/p
+kiran 
+
+Inheritance
+  - Reusability
+  - diabetes from grand parents to me.
+  - we can create 2 class in a single, but should not be public access specifier.
+  - what ever the file name that class should be public 
+  
+App.java
+
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+}
+}
+
+class App1
+{
+	
+}
+
+class App2
+{
+	
+}
+
+//no error
+
+ class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+}
+}
+
+ public class App1
+{
+	
+}
+
+class App2
+{
+	
+}
+//error
+
+A.java
+public class A {
+   int i = 10;
+}
+
+B.java
+public class B extends A {
+
+	public static void main(String[] args) {
+		
+		B b = new B();
+		System.out.println(b.i);
+        b.i = 100;
+        System.out.println(b.i);
+	}
+
+}
+
+o/p
+10
+100
+
+public class A {
+   int i = 10;
+   
+   public void test()
+   {
+	   System.out.println("method called");
+   }
+}
+
+public class B extends A {
+
+	public static void main(String[] args) {
+		
+		B b = new B();
+		System.out.println(b.i);
+        b.i = 100;
+        System.out.println(b.i);
+        b.test();
+	}
+
+}
+
+o/p
+10
+100
+method called
+
+Example of non subclass
+-without inheritance we can also access the members of the other class by creating object of the class and remove extends keyword
+
+public class A1 {
+	 int i = 10;
+	   
+	   public void test()
+	   {
+		   System.out.println("method called");
+	   }
+}
+
+public class B1 {
+
+	public static void main(String[] args) {
+		//creating the object of A1 class
+		A1 a = new A1();
+		a.test();
+
+	}
+
+}
+
+o/p
+method called
+
+Sequential inheritance 
+public class A3 {
+	
+	int i = 10;
+
+}
+
+
+public class B3 extends A3{
+	
+	int j = 20;
+
+}
+
+public class C3 extends B3{
+         int k = 30;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		C3 c = new C3();
+		System.out.println(c.i);
+		System.out.println(c.j);
+		System.out.println(c.k);
+
+	}
+
+}
+
+o/p
+10
+20
+30
+
+Part 2 14/10/2020
+Multiple Inheritance
+ - Inheriting more than 2 parent class in child classes.
+ - In java class level multiple inheritance does not support. 
+ - multiple inheritnace result's in complex designing of software which will make the maintainance of application complex
+ 
+ public class A4 extends A3,B3 {
+  int i = 100;
+}
+
+//we will get error
+
+Inheritance 
+ - here we inherit the members from the parent to child class with an intention to reuse those members
+
+Polymorphism
+ - many forms 
+ - Developing a feature in java that can more than one form.
+ 
+ 2 way's to achieve polymorphism
+  - Overriding
+  - Overloading
+  
+15/10/2020 - Part 1 
+Overriding 
+  - purpose, modify logic of inherited method 
+  - never apply polymorphism on variables 
+  - Inheriting the method in child class and modifying logic of the inherited method in child class
+
+public class A {
+	
+	public void test()
+	{
+		System.out.println(100);
+	}
+
+}
+
+public class B extends A{
+        public void test()
+        {
+        	System.out.println(1000);
+        }
+	public static void main(String[] args) {
+		B b = new B();
+		b.test();
+		
+		A a  = new A();
+		a.test();
+
+	}
+
+}
+
+o/p
+1000
+100
+
+public class A1 {
+	public void test1()
+	{
+		System.out.println(100);
+	}
+	public void test2()
+	{
+		System.out.println(500);
+	}
+}
+
+public class B1 extends A1{
+	public void test1()
+	{
+		System.out.println(1000);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B1 b = new B1();
+		b.test1();
+		b.test2();
+
+	}
+
+}
+o/p
+1000
+500
+
+-how overriding beneficial for developer
+- without inheritance there is no over riding can be done
+
+public class B12 extends B1{
+	public void test1()
+	{
+		System.out.println(1000);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A1 a = new A1();
+		a.test1();
+		a.test2();
+
+	}
+
+}
+
+o/p
+100
+500
+
+public class A2 {
+	
+	public void x()
+	{
+		System.out.println("x");
+	}
+	
+	public void y()
+	{
+		System.out.println("y");
+	}
+	
+	public void z()
+	{
+		System.out.println("z");
+	}
+
+}
+
+public class B2 extends A2{
+
+	public void x()
+	{
+		System.out.println(1);
+	}
+
+	public void z()
+	{
+		System.out.println(100);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		B2  b = new B2();
+		b.x();
+		b.y();
+		b.z();
+
+	}
+
+}
+
+o/p
+1
+y
+100
+
+- child to parent relationship - Inheritance is not possible
+
+Annotations - vimp
+
+ @annotationname - set of instruction given to the compiler to perform specific set of task 
+ @Override - starts with capital letter
+ 
+public class A {
+	public void test()
+	{
+		System.out.println(100);
+	}
+}
+
+public class B extends A{
+	@Override
+	public void test()
+    {
+    	System.out.println(1000);
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      B b = new B();
+	  b.test();
+	}
+
+}
+o/p
+100
+
+real time scenario
+ - SilverAccount and Diamond
+ 
+overloading
+ - Email services (2 category promotional emailers(unexpected) & tranasactional emailers(100% we want))
+ 
+ - we don't required inheritance.
+ - developing more than 1 method with same name in same class with different number of arguments or data type
+ 
+ public class Email {
+	public void sendMail(int transactionId, String email)
+	{
+		System.out.println("transctional email");
+	}
+	
+	public void sendMail(String email)
+	{
+		System.out.println("promotional email");
+	}
+
+	public static void main(String[] args) {
+		Email e = new Email();
+		e.sendMail("kirangond05@gmail.com");
+		e.sendMail(10, "pavan@gmail.com");
+
+	}
+
+}
+
+o/p
+promotional email
+transctional email
+
+15/10/2020 - Part 2 Mar 20
+
+Jar - Java archieve
+ - collection of .class files 
+ - putting all files and wrapping it(archieve) and putting in to .jar file 
+ - reusability of logic written by someone
+ 
+ download a jar and add into your project 
+ 
+ how to convert project into jar file
+  select project - export - Java(Jar file) - save 
+  
+ add jar to project 
+ select project - properties - java build path - libraries - select file and ok 
+  we will get new option Referenced libraries
+  
+import com.annotation.A;
+
+public class Reuse {
+	public static void main(String[] args) {
+		A a = new A();
+		a.test();
+	}
+
+}
+
+Array's 2D 
+-
+
+public class Array2D {
+
+	public static void main(String[] args) {
+		int a[][] = new int[2][3];
+		a[0][0]=10;
+		a[0][1]=12;
+		a[0][2]=14;
+		a[1][0]=16;
+		a[1][1]=18;
+		a[1][2]=20;
+		System.out.println(a.length); //will give row length
+		System.out.println(a[0].length); //will give column length it should be less than total number of rows
+        System.out.println(a.length*a[0].length);
+		 for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[0].length; j++) {
+				System.out.println(a[i][j]);
+			}
+		}
+	}
+
+}
+o/p
+2
+3
+6
+10
+12
+14
+16
+18
+20
+
+16/10/2020 -   Sept 12
+ - Packages
+    folders - to store programs in organized manner
+    resolves Naming convention problem(we can create same file name in different fodlers)
+    write in lower case (we can write in upper but use lower) and we can't give keywords name 	
+	
+package com.package1;
+public class A {
+
+}
+
+	
+package com.package2;
+public class B {
+
+}
+
+- import keyword used to access class var/member which is present in other package.
+- import should be top most keyword in java
+- want to access within the same package import not recommended.
+
+package com.package1;
+public class A {
+
+}
+
+package com.package2;
+import com.package1.A;
+public class B {
+   B b = new B ();
+   
+   A a = new A();
+}
+
+Regular expression - import com.package1.* -  import everything from package package1 
+
+
+Access Specifier 
+  - security
+  - access sepcifier applied on class members 
+  
+  private
+  default
+  protected
+  public 
+  
+  - private members only accessed in same class.
+  - default members access within same package 
+  
+  
+19/10/2022 - 
+Encapsulation
+ -- wrapping of variable inside the method so direct access to the variable not allowed.
+ -- variable need to private.
+ -- using getters and setters we access the variable because methods are public.
+ 
+package com.encapsulation;
+
+public class A {
+	
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+
+}
+
+
+package com.encapsulation;
+
+public class B {
+	
+	public static void main(String[] args)
+	{
+		A a = new A();
+		//System.out.println(a.name); // can't access private variable outside the class
+	   a.setName("kiran");
+	   System.out.println(a.getName());
+	}
+
+}
+
+o/p
+kiran
+
+
+part 2 inheritance
+ - Every class in java are sub class of Object class.
+
+super keyword-
+ - used to access the members of parent class.
+ - without inheritance super keyword cannot be used.
+ - super keyword cannot be used in static method.
+ - both parent static and non static members can be access in child class using super keyword.
+ 
+package com.superkeyword;
+
+public class A {
+    int i = 10;
+
+}
+
+
+package com.superkeyword;
+
+
+public class B extends A{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B b  = new B();
+		b.test();
+
+	}
+
+	private void test() {
+		// TODO Auto-generated method stub
+		System.out.println(super.i);
+		
+	}
+
+}
+
+o/p
+10
+
+package com.superkeyword;
+
+public class A1 {
+	
+	int i = 10;
+	static int j = 20;
+	
+	public void test1()
+	{
+		System.out.println("non static method: ");
+	}
+	
+	public static void test2()
+	{
+		System.out.println("static method: ");
+	}
+
+}
+
+
+package com.superkeyword;
+
+public class B2 extends A1{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B2 b = new B2();
+	//	System.out.println(super.i); // cannot use super in static method
+		b.test();
+		
+
+	}
+
+	private void test() {
+		// TODO Auto-generated method stub
+		System.out.println(super.i);
+		System.out.println(super.j);
+		super.test1();
+		super.test2();
+	}
+
+}
+
+o/p
+10
+20
+non static method: 
+static method: 
+
+
+package com.superkeyword;
+
+public class A3 {
+	
+	A3()
+	{
+		System.out.println("parent constructor");
+	}
+
+}
+
+package com.superkeyword;
+
+public class B3 extends A3{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		B3 b = new B3();
+		
+	}
+
+	B3() {
+		// TODO Auto-generated method stub
+		super();
+		
+	}
+
+}
+
+o/p
+parent constructor
+
+
+package com.superkeyword;
+
+public class A4 {
+	
+	A4()
+	{
+		System.out.println("Parent constructor: ");
+	}
+
+}
+
+package com.superkeyword;
+
+public class B4 extends A4{
+
+	B4()
+	{
+		//automatically super keyword placed by JVM for no argument constructor
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B4 b = new B4();
+	
+
+	}
+
+}
+
+o/p
+Parent constructor:
+
+20/10/202 
+Interfaces
+ - Incomplete method (no implementaions)
+ - abstraction achieved using interface
+
+
+public interface A {
+	
+	public void test();
+
+}
+
+package com.interfaces;
+
+public class B implements A{
+
+	@Override
+	public void test()
+	{
+		System.out.println(500);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		B b = new B();
+		b.test();
+		
+
+	}
+
+	
+
+}
+
+
+o/p
+500
+
+
+20/10/2020 - Sept 15
+Marker interface 
+ - interface with nothing
+ 
+lamda expression
+interface A
+{
+    public void test();
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        A a = () -> {
+             System.out.println(100);
+        };
+        
+        a.test();
+       
+    }
+}
+
+
+java 8 features
+1. lamda expression
+2. complete method in interface 
+3. Functional Interface 
+
+Abstract class
+
+22/10/2020
+-Exception 
+-
+
+
+23/10/2020 - Sept 16 
+File Handling
+  
+27/10/2020 - Sept 19
+fw.write(int c);
+fw.write(Sring str);
+fw.write(char[] c);
+
+BufferReader
+BufferWrite
+
+Serialization
+deSerialization
+
+28/10/2020 Sept 18
+Exception continuation:
+ Multiple catch block
+ finally
+ 
+ Strings
+ reverse a string
+ count number of words 
+ count of opening and closing bracket
+ 
+29/10/2020
+ Mutable and Immutable 
+ constant pool
+ convert to lowercase
+ 
+Sept 20 
+Threads  
+ run()
+ start()
+
+ Runnable  run()
+
+
+Sept 29 Nov 5 2020
+
+throw and throws
+
+Oct 4
+Regular experession
+ - For validation purpose
+ 
+
+
+

@@ -1,0 +1,566 @@
+================
+created a folder : C:\oops_project
+
+imported project into the folder Pankaj-Academy
+
+created java_oops_concept repo in github 
+
+
+
+import project into the eclipse 
+ 
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .settings/org.eclipse.jdt.core.prefs
+        modified:   bin/com/abstractpackage/A.class
+        modified:   bin/com/abstractpackage/B.class
+        modified:   bin/com/accessspecifier/p1/A.class
+        modified:   bin/com/accessspecifier/p1/B.class
+        modified:   bin/com/accessspecifier/p2/A1.class
+        modified:   bin/com/annotation/A.class
+        modified:   bin/com/annotation/B.class
+        modified:   bin/com/arrays/A.class
+        modified:   bin/com/arrays/Args.class
+        modified:   bin/com/arrays/Array.class
+        modified:   bin/com/arrays/Array2D.class
+        modified:   bin/com/arrays/B.class
+        modified:   bin/com/arrays/CountAllArrayElements.class
+        modified:   bin/com/arrays/CountOfSpecificArrayElements.class
+        modified:   bin/com/collection/ArrayListClass.class
+        modified:   bin/com/contructor/A.class
+        modified:   bin/com/contructor/A1.class
+        modified:   bin/com/contructor/A2.class
+        modified:   bin/com/contructor/A3.class
+        modified:   bin/com/contructor/B.class
+        modified:   bin/com/contructor/C.class
+        modified:   bin/com/contructor/Constructors.class
+        modified:   bin/com/contructor/DefaultConstructor.class
+        modified:   bin/com/contructor/Input.class
+        modified:   bin/com/contructor/POJO.class
+        modified:   bin/com/contructor/This.class
+        modified:   bin/com/contructor/main.class
+        modified:   bin/com/deserilization/A.class
+        modified:   bin/com/deserilization/B.class
+        modified:   bin/com/deserilization/C.class
+        modified:   bin/com/encapsulation/A.class
+        modified:   bin/com/encapsulation/B.class
+        modified:   bin/com/exception/ArithmeticExceptionExample.class
+        modified:   bin/com/exception/MultipleExceptionInTry.class
+        modified:   bin/com/exception/NumberFormatExceptionExample.class
+        modified:   bin/com/exception/OnlyOneAtTimeException.class
+        modified:   bin/com/exception/UsingePrintStackTrace.class
+        modified:   bin/com/exception/checkedandunchecked/CheckedExceptionExample.class
+        modified:   bin/com/exception/checkedandunchecked/FinallyBlock.class
+        modified:   bin/com/exception/customexception/CustomException1.class
+        modified:   bin/com/exception/customexception/ThrowKeywordExample.class
+        modified:   bin/com/exception/customexception/ThrowKeywordExample1.class
+        modified:   bin/com/exception/customexception/UsingCustomException1.class
+        modified:   bin/com/exceptions/A.class
+        modified:   bin/com/exceptions/A1.class
+        modified:   bin/com/exceptions/A3.class
+        modified:   bin/com/exceptions/A4.class
+        modified:   bin/com/exceptions/Finally.class
+        modified:   bin/com/exceptions/Finally1.class
+        modified:   bin/com/filehandling/A.class
+        modified:   bin/com/filehandling/A1.class
+        modified:   bin/com/filehandling/A1FileReader.class
+        modified:   bin/com/filehandling/A1FileWriter.class
+        modified:   bin/com/filehandling/A2.class
+        modified:   bin/com/filehandling/A2FileReader.class
+        modified:   bin/com/filehandling/A3.class
+        modified:   bin/com/filehandling/A4.class
+        modified:   bin/com/filehandling/ABufferReader.class
+        modified:   bin/com/filehandling/AFileReader.class
+        modified:   bin/com/filehandling/AFileWriter.class
+        modified:   bin/com/getter/setter/A.class
+        modified:   bin/com/getter/setter/AccessingMembers.class
+        modified:   bin/com/getter/setter/B.class
+        modified:   bin/com/getter/setter/This.class
+        modified:   bin/com/getter/setter/This1.class
+        modified:   bin/com/inheritance/A.class
+        modified:   bin/com/inheritance/A1.class
+        modified:   bin/com/inheritance/A3.class
+        modified:   bin/com/inheritance/A4.class
+        modified:   bin/com/inheritance/App.class
+        modified:   bin/com/inheritance/App1.class
+        modified:   bin/com/inheritance/App2.class
+        modified:   bin/com/inheritance/B.class
+        modified:   bin/com/inheritance/B1.class
+        modified:   bin/com/inheritance/B3.class
+        modified:   bin/com/inheritance/C3.class
+        modified:   bin/com/interfaces/A.class
+        modified:   bin/com/interfaces/A2.class
+        modified:   bin/com/interfaces/A3.class
+        modified:   bin/com/interfaces/A4.class
+        modified:   bin/com/interfaces/ALamda.class
+        modified:   bin/com/interfaces/B.class
+        modified:   bin/com/interfaces/B2.class
+        modified:   bin/com/interfaces/B3.class
+        modified:   bin/com/interfaces/B4.class
+        modified:   bin/com/interfaces/BLamda.class
+        modified:   bin/com/interfaces/C3.class
+        modified:   bin/com/leetcode/array/SingelNumber.class
+        modified:   bin/com/leetcode/array/TwoSum.class
+        modified:   bin/com/leetcode/array/TwoSum1.class
+        modified:   bin/com/leetcode/array/TwoSum2.class
+        modified:   bin/com/package1/A.class
+        modified:   bin/com/package2/B.class
+        modified:   bin/com/polymorphism/A.class
+        modified:   bin/com/polymorphism/A1.class
+        modified:   bin/com/polymorphism/A2.class
+        modified:   bin/com/polymorphism/A3.class
+        modified:   bin/com/polymorphism/B.class
+        modified:   bin/com/polymorphism/B1.class
+        modified:   bin/com/polymorphism/B12.class
+        modified:   bin/com/polymorphism/B2.class
+        modified:   bin/com/polymorphism/Diamond.class
+        modified:   bin/com/polymorphism/Email.class
+        modified:   bin/com/polymorphism/SilverAccount.class
+        modified:   bin/com/projects/atm/ATM1.class
+        modified:   bin/com/projects/atm/ATM2.class
+        modified:   bin/com/projects/atm/ATM3.class
+        modified:   bin/com/projects/atm/ATM4.class
+        modified:   bin/com/projects/atm/NumberOfTrials.class
+        modified:   bin/com/recursion/Factorial.class
+        modified:   bin/com/recursion/Fibonaci.class
+        modified:   bin/com/statements/Blocks1.class
+        modified:   bin/com/statements/DoWhile.class
+        modified:   bin/com/statements/Loop.class
+        modified:   bin/com/statements/Statements.class
+        modified:   bin/com/statements/Switch.class
+        modified:   bin/com/statements/While.class
+        modified:   bin/com/statements/blocks.class
+        modified:   bin/com/statements/breaklabel1.class
+        modified:   bin/com/statements/breakstatement.class
+        modified:   bin/com/strings/ConvertToLowerCase.class
+        modified:   bin/com/strings/CountNumberOfWods.class
+        modified:   bin/com/strings/CountOfOpenCloseBracket.class
+        modified:   bin/com/strings/ImMutable.class
+        modified:   bin/com/strings/IsEquals.class
+        modified:   bin/com/strings/IsEquals1.class
+        modified:   bin/com/strings/PrintingDesiredShape.class
+        modified:   bin/com/strings/PrintingSquare.class
+        modified:   bin/com/strings/StringReverse.class
+        modified:   bin/com/superkeyword/A.class
+        modified:   bin/com/superkeyword/A1.class
+        modified:   bin/com/superkeyword/A3.class
+        modified:   bin/com/superkeyword/A4.class
+        modified:   bin/com/superkeyword/B.class
+        modified:   bin/com/superkeyword/B2.class
+        modified:   bin/com/superkeyword/B3.class
+        modified:   bin/com/superkeyword/B4.class
+        modified:   bin/com/throwkeyword/throwskeyword/A.class
+        modified:   bin/com/typecasting/A.class
+        modified:   bin/com/typecasting/AutoUpcasting.class
+        modified:   bin/com/typecasting/DownCasting.class
+        modified:   bin/com/typecasting/DownCastingMultiple.class
+        modified:   bin/com/typecasting/UniCode.class
+        modified:   bin/variables/A.class
+        modified:   bin/variables/CLA.class
+        modified:   bin/variables/DataType.class
+        modified:   bin/variables/DeclareStatic.class
+        modified:   bin/variables/ReferenceVar.class
+        modified:   bin/variables/Scope.class
+        modified:   bin/variables/StaticReference.class
+        modified:   bin/variables/StaticVsNonStatic.class
+        modified:   bin/variables/VarData.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/.gitignore
+        mintty.exe.stackdump
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git add .
+warning: LF will be replaced by CRLF in bin/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mintty.exe.stackdump.
+The file will have its original line endings in your working directory
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .settings/org.eclipse.jdt.core.prefs
+        new file:   bin/.gitignore
+        modified:   bin/com/abstractpackage/A.class
+        modified:   bin/com/abstractpackage/B.class
+        modified:   bin/com/accessspecifier/p1/A.class
+        modified:   bin/com/accessspecifier/p1/B.class
+        modified:   bin/com/accessspecifier/p2/A1.class
+        modified:   bin/com/annotation/A.class
+        modified:   bin/com/annotation/B.class
+        modified:   bin/com/arrays/A.class
+        modified:   bin/com/arrays/Args.class
+        modified:   bin/com/arrays/Array.class
+        modified:   bin/com/arrays/Array2D.class
+        modified:   bin/com/arrays/B.class
+        modified:   bin/com/arrays/CountAllArrayElements.class
+        modified:   bin/com/arrays/CountOfSpecificArrayElements.class
+        modified:   bin/com/collection/ArrayListClass.class
+        modified:   bin/com/contructor/A.class
+        modified:   bin/com/contructor/A1.class
+        modified:   bin/com/contructor/A2.class
+        modified:   bin/com/contructor/A3.class
+        modified:   bin/com/contructor/B.class
+        modified:   bin/com/contructor/C.class
+        modified:   bin/com/contructor/Constructors.class
+        modified:   bin/com/contructor/DefaultConstructor.class
+        modified:   bin/com/contructor/Input.class
+        modified:   bin/com/contructor/POJO.class
+        modified:   bin/com/contructor/This.class
+        modified:   bin/com/contructor/main.class
+        modified:   bin/com/deserilization/A.class
+        modified:   bin/com/deserilization/B.class
+        modified:   bin/com/deserilization/C.class
+        modified:   bin/com/encapsulation/A.class
+        modified:   bin/com/encapsulation/B.class
+        modified:   bin/com/exception/ArithmeticExceptionExample.class
+        modified:   bin/com/exception/MultipleExceptionInTry.class
+        modified:   bin/com/exception/NumberFormatExceptionExample.class
+        modified:   bin/com/exception/OnlyOneAtTimeException.class
+        modified:   bin/com/exception/UsingePrintStackTrace.class
+        modified:   bin/com/exception/checkedandunchecked/CheckedExceptionExample.class
+        modified:   bin/com/exception/checkedandunchecked/FinallyBlock.class
+        modified:   bin/com/exception/customexception/CustomException1.class
+        modified:   bin/com/exception/customexception/ThrowKeywordExample.class
+        modified:   bin/com/exception/customexception/ThrowKeywordExample1.class
+        modified:   bin/com/exception/customexception/UsingCustomException1.class
+        modified:   bin/com/exceptions/A.class
+        modified:   bin/com/exceptions/A1.class
+        modified:   bin/com/exceptions/A3.class
+        modified:   bin/com/exceptions/A4.class
+        modified:   bin/com/exceptions/Finally.class
+        modified:   bin/com/exceptions/Finally1.class
+        modified:   bin/com/filehandling/A.class
+        modified:   bin/com/filehandling/A1.class
+        modified:   bin/com/filehandling/A1FileReader.class
+        modified:   bin/com/filehandling/A1FileWriter.class
+        modified:   bin/com/filehandling/A2.class
+        modified:   bin/com/filehandling/A2FileReader.class
+        modified:   bin/com/filehandling/A3.class
+        modified:   bin/com/filehandling/A4.class
+        modified:   bin/com/filehandling/ABufferReader.class
+        modified:   bin/com/filehandling/AFileReader.class
+        modified:   bin/com/filehandling/AFileWriter.class
+        modified:   bin/com/getter/setter/A.class
+        modified:   bin/com/getter/setter/AccessingMembers.class
+        modified:   bin/com/getter/setter/B.class
+        modified:   bin/com/getter/setter/This.class
+        modified:   bin/com/getter/setter/This1.class
+        modified:   bin/com/inheritance/A.class
+        modified:   bin/com/inheritance/A1.class
+        modified:   bin/com/inheritance/A3.class
+        modified:   bin/com/inheritance/A4.class
+        modified:   bin/com/inheritance/App.class
+        modified:   bin/com/inheritance/App1.class
+        modified:   bin/com/inheritance/App2.class
+        modified:   bin/com/inheritance/B.class
+        modified:   bin/com/inheritance/B1.class
+        modified:   bin/com/inheritance/B3.class
+        modified:   bin/com/inheritance/C3.class
+        modified:   bin/com/interfaces/A.class
+        modified:   bin/com/interfaces/A2.class
+        modified:   bin/com/interfaces/A3.class
+        modified:   bin/com/interfaces/A4.class
+        modified:   bin/com/interfaces/ALamda.class
+        modified:   bin/com/interfaces/B.class
+        modified:   bin/com/interfaces/B2.class
+        modified:   bin/com/interfaces/B3.class
+        modified:   bin/com/interfaces/B4.class
+        modified:   bin/com/interfaces/BLamda.class
+        modified:   bin/com/interfaces/C3.class
+        modified:   bin/com/leetcode/array/SingelNumber.class
+        modified:   bin/com/leetcode/array/TwoSum.class
+        modified:   bin/com/leetcode/array/TwoSum1.class
+        modified:   bin/com/leetcode/array/TwoSum2.class
+        modified:   bin/com/package1/A.class
+        modified:   bin/com/package2/B.class
+        modified:   bin/com/polymorphism/A.class
+        modified:   bin/com/polymorphism/A1.class
+        modified:   bin/com/polymorphism/A2.class
+        modified:   bin/com/polymorphism/A3.class
+        modified:   bin/com/polymorphism/B.class
+        modified:   bin/com/polymorphism/B1.class
+        modified:   bin/com/polymorphism/B12.class
+        modified:   bin/com/polymorphism/B2.class
+        modified:   bin/com/polymorphism/Diamond.class
+        modified:   bin/com/polymorphism/Email.class
+        modified:   bin/com/polymorphism/SilverAccount.class
+        modified:   bin/com/projects/atm/ATM1.class
+        modified:   bin/com/projects/atm/ATM2.class
+        modified:   bin/com/projects/atm/ATM3.class
+        modified:   bin/com/projects/atm/ATM4.class
+        modified:   bin/com/projects/atm/NumberOfTrials.class
+        modified:   bin/com/recursion/Factorial.class
+        modified:   bin/com/recursion/Fibonaci.class
+        modified:   bin/com/statements/Blocks1.class
+        modified:   bin/com/statements/DoWhile.class
+        modified:   bin/com/statements/Loop.class
+        modified:   bin/com/statements/Statements.class
+        modified:   bin/com/statements/Switch.class
+        modified:   bin/com/statements/While.class
+        modified:   bin/com/statements/blocks.class
+        modified:   bin/com/statements/breaklabel1.class
+        modified:   bin/com/statements/breakstatement.class
+        modified:   bin/com/strings/ConvertToLowerCase.class
+        modified:   bin/com/strings/CountNumberOfWods.class
+        modified:   bin/com/strings/CountOfOpenCloseBracket.class
+        modified:   bin/com/strings/ImMutable.class
+        modified:   bin/com/strings/IsEquals.class
+        modified:   bin/com/strings/IsEquals1.class
+        modified:   bin/com/strings/PrintingDesiredShape.class
+        modified:   bin/com/strings/PrintingSquare.class
+        modified:   bin/com/strings/StringReverse.class
+        modified:   bin/com/superkeyword/A.class
+        modified:   bin/com/superkeyword/A1.class
+        modified:   bin/com/superkeyword/A3.class
+        modified:   bin/com/superkeyword/A4.class
+        modified:   bin/com/superkeyword/B.class
+        modified:   bin/com/superkeyword/B2.class
+        modified:   bin/com/superkeyword/B3.class
+        modified:   bin/com/superkeyword/B4.class
+        modified:   bin/com/throwkeyword/throwskeyword/A.class
+        modified:   bin/com/typecasting/A.class
+        modified:   bin/com/typecasting/AutoUpcasting.class
+        modified:   bin/com/typecasting/DownCasting.class
+        modified:   bin/com/typecasting/DownCastingMultiple.class
+        modified:   bin/com/typecasting/UniCode.class
+        modified:   bin/variables/A.class
+        modified:   bin/variables/CLA.class
+        modified:   bin/variables/DataType.class
+        modified:   bin/variables/DeclareStatic.class
+        modified:   bin/variables/ReferenceVar.class
+        modified:   bin/variables/Scope.class
+        modified:   bin/variables/StaticReference.class
+        modified:   bin/variables/StaticVsNonStatic.class
+        modified:   bin/variables/VarData.class
+        new file:   mintty.exe.stackdump
+
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git commit -m 'first time commit'
+[master b9e499d] first time commit
+ 155 files changed, 31 insertions(+), 3 deletions(-)
+ create mode 100644 bin/.gitignore
+ rewrite bin/com/abstractpackage/A.class (99%)
+ rewrite bin/com/abstractpackage/B.class (88%)
+ rewrite bin/com/accessspecifier/p1/A.class (99%)
+ rewrite bin/com/accessspecifier/p1/B.class (100%)
+ rewrite bin/com/accessspecifier/p2/A1.class (83%)
+ rewrite bin/com/annotation/A.class (99%)
+ rewrite bin/com/annotation/B.class (89%)
+ rewrite bin/com/arrays/A.class (100%)
+ rewrite bin/com/arrays/Args.class (100%)
+ rewrite bin/com/arrays/Array.class (98%)
+ rewrite bin/com/arrays/Array2D.class (100%)
+ rewrite bin/com/arrays/B.class (99%)
+ rewrite bin/com/arrays/CountAllArrayElements.class (100%)
+ rewrite bin/com/arrays/CountOfSpecificArrayElements.class (99%)
+ rewrite bin/com/collection/ArrayListClass.class (99%)
+ rewrite bin/com/contructor/A.class (100%)
+ rewrite bin/com/contructor/A1.class (100%)
+ rewrite bin/com/contructor/A2.class (100%)
+ rewrite bin/com/contructor/A3.class (100%)
+ rewrite bin/com/contructor/B.class (99%)
+ rewrite bin/com/contructor/C.class (100%)
+ rewrite bin/com/contructor/Constructors.class (100%)
+ rewrite bin/com/contructor/DefaultConstructor.class (99%)
+ rewrite bin/com/contructor/Input.class (99%)
+ rewrite bin/com/contructor/POJO.class (100%)
+ rewrite bin/com/contructor/This.class (98%)
+ rewrite bin/com/contructor/main.class (100%)
+ rewrite bin/com/deserilization/A.class (100%)
+ rewrite bin/com/deserilization/B.class (100%)
+ rewrite bin/com/deserilization/C.class (99%)
+ rewrite bin/com/encapsulation/A.class (99%)
+ rewrite bin/com/encapsulation/B.class (100%)
+ rewrite bin/com/exception/ArithmeticExceptionExample.class (100%)
+ rewrite bin/com/exception/MultipleExceptionInTry.class (100%)
+ rewrite bin/com/exception/NumberFormatExceptionExample.class (100%)
+ rewrite bin/com/exception/OnlyOneAtTimeException.class (100%)
+ rewrite bin/com/exception/UsingePrintStackTrace.class (100%)
+ rewrite bin/com/exception/checkedandunchecked/CheckedExceptionExample.class (100%)
+ rewrite bin/com/exception/checkedandunchecked/FinallyBlock.class (100%)
+ rewrite bin/com/exception/customexception/CustomException1.class (99%)
+ rewrite bin/com/exception/customexception/ThrowKeywordExample.class (100%)
+ rewrite bin/com/exception/customexception/ThrowKeywordExample1.class (100%)
+ rewrite bin/com/exception/customexception/UsingCustomException1.class (100%)
+ rewrite bin/com/exceptions/A.class (100%)
+ rewrite bin/com/exceptions/A1.class (93%)
+ rewrite bin/com/exceptions/A3.class (99%)
+ rewrite bin/com/exceptions/A4.class (99%)
+ rewrite bin/com/exceptions/Finally.class (100%)
+ rewrite bin/com/exceptions/Finally1.class (100%)
+ rewrite bin/com/filehandling/A.class (99%)
+ rewrite bin/com/filehandling/A1.class (99%)
+ rewrite bin/com/filehandling/A1FileReader.class (100%)
+ rewrite bin/com/filehandling/A1FileWriter.class (100%)
+ rewrite bin/com/filehandling/A2.class (99%)
+ rewrite bin/com/filehandling/A2FileReader.class (99%)
+ rewrite bin/com/filehandling/A3.class (99%)
+ rewrite bin/com/filehandling/A4.class (99%)
+ rewrite bin/com/filehandling/ABufferReader.class (100%)
+ rewrite bin/com/filehandling/AFileReader.class (100%)
+ rewrite bin/com/filehandling/AFileWriter.class (100%)
+ rewrite bin/com/getter/setter/A.class (99%)
+ rewrite bin/com/getter/setter/AccessingMembers.class (100%)
+ rewrite bin/com/getter/setter/B.class (99%)
+ rewrite bin/com/getter/setter/This.class (100%)
+ rewrite bin/com/getter/setter/This1.class (94%)
+ rewrite bin/com/inheritance/A.class (99%)
+ rewrite bin/com/inheritance/A1.class (99%)
+ rewrite bin/com/inheritance/A3.class (99%)
+ rewrite bin/com/inheritance/App.class (99%)
+ rewrite bin/com/inheritance/App1.class (99%)
+ rewrite bin/com/inheritance/App2.class (99%)
+ rewrite bin/com/inheritance/B.class (86%)
+ rewrite bin/com/inheritance/B1.class (99%)
+ rewrite bin/com/inheritance/C3.class (81%)
+ rewrite bin/com/interfaces/B.class (100%)
+ rewrite bin/com/interfaces/B2.class (100%)
+ rewrite bin/com/interfaces/B4.class (100%)
+ rewrite bin/com/interfaces/BLamda.class (99%)
+ rewrite bin/com/interfaces/C3.class (100%)
+ rewrite bin/com/leetcode/array/SingelNumber.class (100%)
+ rewrite bin/com/leetcode/array/TwoSum.class (100%)
+ rewrite bin/com/leetcode/array/TwoSum1.class (99%)
+ rewrite bin/com/leetcode/array/TwoSum2.class (99%)
+ rewrite bin/com/package1/A.class (100%)
+ rewrite bin/com/package2/B.class (89%)
+ rewrite bin/com/polymorphism/A.class (99%)
+ rewrite bin/com/polymorphism/A1.class (99%)
+ rewrite bin/com/polymorphism/A2.class (99%)
+ rewrite bin/com/polymorphism/A3.class (99%)
+ rewrite bin/com/polymorphism/B.class (87%)
+ rewrite bin/com/polymorphism/B1.class (87%)
+ rewrite bin/com/polymorphism/B12.class (87%)
+ rewrite bin/com/polymorphism/B2.class (88%)
+ rewrite bin/com/polymorphism/Diamond.class (88%)
+ rewrite bin/com/polymorphism/Email.class (99%)
+ rewrite bin/com/polymorphism/SilverAccount.class (99%)
+ rewrite bin/com/projects/atm/ATM1.class (99%)
+ rewrite bin/com/projects/atm/ATM2.class (100%)
+ rewrite bin/com/projects/atm/ATM3.class (100%)
+ rewrite bin/com/projects/atm/ATM4.class (100%)
+ rewrite bin/com/projects/atm/NumberOfTrials.class (100%)
+ rewrite bin/com/recursion/Factorial.class (99%)
+ rewrite bin/com/recursion/Fibonaci.class (100%)
+ rewrite bin/com/statements/Blocks1.class (100%)
+ rewrite bin/com/statements/DoWhile.class (100%)
+ rewrite bin/com/statements/Loop.class (100%)
+ rewrite bin/com/statements/Statements.class (100%)
+ rewrite bin/com/statements/Switch.class (99%)
+ rewrite bin/com/statements/While.class (98%)
+ rewrite bin/com/statements/blocks.class (100%)
+ rewrite bin/com/statements/breaklabel1.class (100%)
+ rewrite bin/com/statements/breakstatement.class (100%)
+ rewrite bin/com/strings/ConvertToLowerCase.class (100%)
+ rewrite bin/com/strings/CountNumberOfWods.class (100%)
+ rewrite bin/com/strings/CountOfOpenCloseBracket.class (100%)
+ rewrite bin/com/strings/ImMutable.class (95%)
+ rewrite bin/com/strings/IsEquals.class (100%)
+ rewrite bin/com/strings/IsEquals1.class (100%)
+ rewrite bin/com/strings/PrintingDesiredShape.class (99%)
+ rewrite bin/com/strings/PrintingSquare.class (100%)
+ rewrite bin/com/strings/StringReverse.class (100%)
+ rewrite bin/com/superkeyword/A.class (99%)
+ rewrite bin/com/superkeyword/A1.class (78%)
+ rewrite bin/com/superkeyword/A3.class (100%)
+ rewrite bin/com/superkeyword/A4.class (100%)
+ rewrite bin/com/superkeyword/B.class (87%)
+ rewrite bin/com/superkeyword/B2.class (88%)
+ rewrite bin/com/superkeyword/B3.class (100%)
+ rewrite bin/com/superkeyword/B4.class (83%)
+ rewrite bin/com/throwkeyword/throwskeyword/A.class (99%)
+ rewrite bin/com/typecasting/A.class (100%)
+ rewrite bin/com/typecasting/AutoUpcasting.class (100%)
+ rewrite bin/com/typecasting/DownCasting.class (100%)
+ rewrite bin/com/typecasting/DownCastingMultiple.class (99%)
+ rewrite bin/com/typecasting/UniCode.class (100%)
+ rewrite bin/variables/A.class (100%)
+ rewrite bin/variables/CLA.class (99%)
+ rewrite bin/variables/DataType.class (93%)
+ rewrite bin/variables/DeclareStatic.class (100%)
+ rewrite bin/variables/ReferenceVar.class (100%)
+ rewrite bin/variables/Scope.class (94%)
+ rewrite bin/variables/StaticReference.class (80%)
+ rewrite bin/variables/StaticVsNonStatic.class (92%)
+ rewrite bin/variables/VarData.class (77%)
+ create mode 100644 mintty.exe.stackdump
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git remote add origin https://github.com/kirangond/java_oops_concept.git
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git push origin master
+To https://github.com/kirangond/java_oops_concept.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/kirangond/java_oops_concept.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git fetch origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 631 bytes | 0 bytes/s, done.
+From https://github.com/kirangond/java_oops_concept
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git push origin master
+To https://github.com/kirangond/java_oops_concept.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/kirangond/java_oops_concept.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git push -f origin master
+Enumerating objects: 584, done.
+Counting objects: 100% (584/584), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (555/555), done.
+Writing objects: 100% (584/584), 149.91 KiB | 1.72 MiB/s, done.
+Total 584 (delta 152), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (152/152), done.
+To https://github.com/kirangond/java_oops_concept.git
+ + b080a3b...b9e499d master -> master (forced update)
+
+gonda@LAPTOP-4UU3SGMU MINGW64 /c/oops_project/Pankaj-Academy (master)
+$ git pull origin master
+From https://github.com/kirangond/java_oops_concept
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
