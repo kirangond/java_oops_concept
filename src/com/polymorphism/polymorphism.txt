@@ -1,0 +1,20 @@
+-----polymorphism-----
+ - many forms 
+ - Developing a feature in java that can more than one form.
+ 
+ 2 way's to achieve polymorphism
+  - Overriding
+  - Overloading
+  
+ - purpose - modify logic of inherited method in child class
+ - never apply Overriding on variables 
+ 
+- without inheritance there is no over riding can be done.
+
+- child to parent relationship - Inheritance is not possible 
+- Parent to child relationship
+
+
+--overloading---
+ - same method name with different number of arguments or different types of arguments
+ 

@@ -1,0 +1,2 @@
+-----Inheritance-----
+- Every class in java are sub class of Object class.

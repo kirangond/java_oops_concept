@@ -1,0 +1,4 @@
+-----Encapsulation-----
+ -- wrapping of variable inside the method so direct access to the variable not allowed.
+ -- variable need to private.
+ -- using getters and setters we access the variable because methods are public.

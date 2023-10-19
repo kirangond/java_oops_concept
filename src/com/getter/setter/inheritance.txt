@@ -1,0 +1,12 @@
+-----Inheritance-----
+- Inheritance (here we inherit the members from the parent to child class with an intention to reuse those members)
+- we can write multiple classes in a single class file (not recommended)
+- only 1 class should be public in it and i.e the class with file name
+
+- using extend keyword we will inherit in other class
+- parent(super) child(sub class) 
+- without inheritance we can also access the members of the other class by creating object of the class and remove extends keyword but it will be not inheritance
+
+- sequential inheritance  class A{} class B extends A{} class C extends B{}
+
+- multiple inheritance - extending more than 1 class class A extends B, C{} -- not supported in java

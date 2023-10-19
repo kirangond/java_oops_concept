@@ -1,0 +1,13 @@
+Abstraction: hiding of implementation details
+--interface are incomplete methods or abstract in nature
+- where class consists of complete method.
+- by default abstract keyword added for the incomplete method in interface
+- class ---> class = extends keyword
+- interface ---> interface = extends keyword
+- interface --- > class = implements keyword
+- multiple inheritance is achieved through interface
+- can class extends other class and implements interface at same point - yes
+  (sequence matters first extend and next implements)
+  
+  -marker interface
+  -lamda expression
