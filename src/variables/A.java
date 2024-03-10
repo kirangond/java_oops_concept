@@ -5,6 +5,7 @@ package variables;
 //static value can be changed
 //static variable only a single copy created  and value will be same through out the program
 //non static multiple copies
+//just dummy changes
 public class A {
 //default static value
 	static int j;
