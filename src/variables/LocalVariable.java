@@ -26,6 +26,7 @@ public class LocalVariable {
 		// TODO Auto-generated method stub
 		int a = 5;
 		System.out.println("a value of sum method: " + a);
+		return;
 		
 	}
 

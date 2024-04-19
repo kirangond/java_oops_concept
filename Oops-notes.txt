@@ -446,7 +446,7 @@ o/p
 
 - Everything part of method loaded into the stack.
 - int x loaded into the stack 
-- object is created in heap but object refernece is present in stack 
+- object is created in heap but object reference is present in stack 
 class A
 {
 p.s.v.m()
@@ -655,7 +655,7 @@ o/p
 
 
 - size of each int block is 4 bytes.
-- starting address+memory size*index 
+- starting address+memory_size*index 
    20+4*0 = 20
    20+4*1= 24
 - Values accessed in array using index number.
@@ -907,7 +907,7 @@ pavan
 
 Mar 5 08/10/2020 Part 2
 ***
-Singature of main method 
+Signature of main method 
 
 public static void main(String[] args)
  - args may be anything we can use any variable name it will work 
