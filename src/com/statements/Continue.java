@@ -1,6 +1,6 @@
 package com.statements;
 
-public class breakstatement {
+public class Continue {
  //while it hit continue control goes back to for loop and skip.
 	public static void main(String[] args) {
 	
