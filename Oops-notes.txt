@@ -120,7 +120,7 @@ Bitwise operator's in java
  
  4&&5 = will give error  (only works with boolean values)
  
- & - used on decimal
+ & - used on decimal and boolean
  && should be used only on boolean values
  
  4&10|true&&true = error 
@@ -135,7 +135,7 @@ Bitwise operator's in java
  
  Ternary operator
  
- expression ? "value1" : "value2"
+ expression ?: "value1" : "value2"
  ex : String res = (5>3)?"x is greater":"y is greater"
  
  comparision
@@ -237,7 +237,7 @@ The program execution follows stack
 
 Static and non static
 
-- wherever object created non static memebers(belongs to object) loaded into object.
+- wherever object created non static members(belongs to object) loaded into object.
 
 
 common memory/permgen/meta space
