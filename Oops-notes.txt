@@ -1390,7 +1390,7 @@ Mar 15
   - Valid and print welcome and stop.
   - Invalid, then enter pin stops.
  
- Scenarion:
+ Scenario:
   		//Read input pin number from user if it is equal to 1234 print welcome else Invalid pin number
 		//read input 3 times use for loop and after first pin valid stop and after 3 time print card is blocked
   
@@ -1680,7 +1680,7 @@ Maximum memory size of var and min - elastic in nature
       upcasting - automated  (converting smaller data type to bigger data type)
 	  downcasting - we need to explicitly say 
 	  
-- Every data types belong to the wraper class 
+- Every data types belong to the wrapper class 
 
   int i = 10; //int 4 bytes
   
@@ -1897,7 +1897,7 @@ Error
 this keyword points to current object running in your program 
  - which ever object is in use it will associated with this keyword.
  - never access local variable using this keyword will give error(this keyword meant to access non static variable and static variable).
- - It is advised not access static varibale using this keyword, however it will work.
+ - It is advised not access static variable using this keyword, however it will work.
 public class This1 {
 
 	public static void main(String[] args) {
