@@ -2041,7 +2041,7 @@ o/p
 kiran 
 
 Inheritance
-  - Reusability
+  - Reuseability
   - diabetes from grand parents to me.
   - we can create 2 class in a single, but should not be public access specifier.
   - what ever the file name that class should be public 
@@ -2198,7 +2198,7 @@ Part 2 14/10/2020
 Multiple Inheritance
  - Inheriting more than 2 parent class in child classes.
  - In java class level multiple inheritance does not support. 
- - multiple inheritnace result's in complex designing of software which will make the maintainance of application complex
+ - multiple inheritance result's in complex designing of software which will make the maintainance of application complex
  
  public class A4 extends A3,B3 {
   int i = 100;
@@ -2211,7 +2211,7 @@ Inheritance
 
 Polymorphism
  - many forms 
- - Developing a feature in java that can more than one form.
+ - Developing a feature in java that can take more than one form.
  
  2 way's to achieve polymorphism
   - Overriding
