@@ -2477,7 +2477,7 @@ o/p
 16/10/2020 -   Sept 12
  - Packages
     folders - to store programs in organized manner
-    resolves Naming convention problem(we can create same file name in different fodlers)
+    resolves Naming convention problem(we can create same file name in different folders)
     write in lower case (we can write in upper but use lower) and we can't give keywords name 	
 	
 package com.package1;
