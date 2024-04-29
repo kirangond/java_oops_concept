@@ -1,6 +1,6 @@
 package com.inheritance;
 
-public class A {
+public class A extends Object{
    int i = 10;
    
    public void test()

@@ -2041,7 +2041,7 @@ o/p
 kiran 
 
 Inheritance
-  - Reusability
+  - Reuseability
   - diabetes from grand parents to me.
   - we can create 2 class in a single, but should not be public access specifier.
   - what ever the file name that class should be public 
@@ -2198,7 +2198,7 @@ Part 2 14/10/2020
 Multiple Inheritance
  - Inheriting more than 2 parent class in child classes.
  - In java class level multiple inheritance does not support. 
- - multiple inheritnace result's in complex designing of software which will make the maintainance of application complex
+ - multiple inheritance result's in complex designing of software which will make the maintainance of application complex
  
  public class A4 extends A3,B3 {
   int i = 100;
@@ -2211,7 +2211,7 @@ Inheritance
 
 Polymorphism
  - many forms 
- - Developing a feature in java that can more than one form.
+ - Developing a feature in java that can take more than one form.
  
  2 way's to achieve polymorphism
   - Overriding
@@ -2477,7 +2477,7 @@ o/p
 16/10/2020 -   Sept 12
  - Packages
     folders - to store programs in organized manner
-    resolves Naming convention problem(we can create same file name in different fodlers)
+    resolves Naming convention problem(we can create same file name in different folders)
     write in lower case (we can write in upper but use lower) and we can't give keywords name 	
 	
 package com.package1;
@@ -2513,7 +2513,7 @@ Regular expression - import com.package1.* -  import everything from package pac
 
 Access Specifier 
   - security
-  - access sepcifier applied on class members 
+  - access specifier applied on class members to provide security
   
   private
   default
