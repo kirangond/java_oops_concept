@@ -713,4 +713,385 @@ limitation's of this keyword
  - never use this keyword inside static method.
  - inside static method this keyword is not added automatically.
 
+Oops Concept:
+
+Inheritance 
+ - purpose - Reuseability
+	- we can create 2 class in a single class(not recommended), but should not have both public access specifier and whichever having public that should be class name
+	-  we inherit the members from the parent to child class with an intention to reuse those members
+
+
+	- Without inheritance we can access members and methods of other class - by creating of object of class(not a inheritance)
+- Every class in java are sub class of Object class.
+	
+
+Sequential inheritance 
+ 
+public class A3 {
+	}
+
+public class B3 extends A3{
+
+}
+
+public class C3 extends B3{
+}
+
+Multiple Inheritance
+ - Inheriting more than 2 parent class in child classes.
+ - In java  multiple inheritance does not support.  (class A extends B, C)
+ - multiple inheritance result's in complex designing of software which will make the maintainance of application complex.
+
+
+Polymorphism
+	 - many forms 
+	 - Developing a feature in java that can take more than one form.
+
+ 2 way's to achieve polymorphism
+  - Overriding
+  - Overloading
+
+Overriding 
+ - Inheriting the method in child class and modifying logic of the inherited method in child class
+	- Purpose -  modify logic of inherited method in child class
+	- Without inheritance no overriding
+	- never apply polymorphism on variables 
+
+Parent to child relationship no vice versa
+
+public class A {
+	
+	public void test()
+	{
+		System.out.println(100);
+	}
+
+}
+
+public class B extends A{
+        public void test()
+        {
+        	System.out.println(1000);
+        }
+	public static void main(String[] args) {
+		B b = new B();
+		b.test();
+		
+		A a  = new A();
+		a.test();
+
+	}
+
+}
+
+o/p:
+1000
+100
+
+
+Annotations 
+ -   
+ @annotationname - set of instruction given to the compiler to perform specific set of task 
+ @Override - starts with capital letter
+  Instructing compiler to check same method and same number of arguments and reuse the method and modify the logic
+
+Real world scenario:
+
+Overloading
+ -  we don't required inheritance.
+	-  developing more than 1 method with same name in same class with different number of arguments or data type
+
+public class Email {
+	public void sendMail(int transactionId, String email)
+	{
+		System.out.println("transctional email");
+	}
+	
+	public void sendMail(String email)
+	{
+		System.out.println("promotional email");
+	}
+
+	public static void main(String[] args) {
+		Email e = new Email();
+		e.sendMail("kirangond05@gmail.com");
+		e.sendMail(10, "pavan@gmail.com");
+
+	}
+
+}
+
+o/p:
+promotional email
+transctional email
+
+Jar - Java archieve
+ - collection of .class files 
+ - putting all files and wrapping it(archieve) and putting in to .jar file 
+ - reusability of logic written by someone
+
+ download a jar and add into your project 
+ 
+ how to convert project into jar file
+  select project - export - Java(Jar file) - save 
+  
+ add jar to project 
+ select project - properties - java build path - libraries - select file and ok 
+  we will get new option Referenced libraries
+
+2D Array
+
+public class Array2D {
+
+	public static void main(String[] args) {
+		int a[][] = new int[2][3];
+		a[0][0]=10;
+		a[0][1]=12;
+		a[0][2]=14;
+		a[1][0]=16;
+		a[1][1]=18;
+		a[1][2]=20;
+		System.out.println(a.length); //will give row length
+		System.out.println(a[0].length); //will give column length it should be less than total number of rows
+        System.out.println(a.length*a[0].length);
+		 for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[0].length; j++) {
+				System.out.println(a[i][j]);
+			}
+		}
+	}
+
+}
+
+o/p:
+2
+3
+6
+10
+12
+14
+16
+18
+20
+
+ - Packages
+    folders - to store programs in organized manner
+    resolves Naming convention problem(we can create same file name in different folders)
+    write in lower case (we can write in upper but use lower) and we can't give keywords name 	
+
+package com.package1;
+public class A {
+
+}
+
+	
+package com.package2;
+public class B {
+
+}
+
+Import packagename.classname
+
+- import keyword used to access class var/member which is present in other package.
+- import should be top most keyword in java
+- want to access within the same package import not recommended.
+
+Package is top most keyword in class and then import if we are importing anything
+
+Regular expression - import com.package1.* -  import everything from package package1 
+
+If we want to access from same package class then not required
+
+Access Specifier 
+  - - access specifier applied on class members to provide security
+
+  private
+  default
+  protected
+  public 
+
+	Private	default	protected	public
+In same class	 Y	Y	Y	Y
+Same package sub-class	N	Y	Y	Y
+Same package non sub-class	N	Y	Y	Y
+different package sub-class	N	N	Y	Y
+different package non sub-class	N	N	N	Y
+
+
+  private
+   - private members only accessed in same class.
+
+
+Default
+  - same package outside the package not accessible
+
+Proected
+ -    accessible in same class, same package and different package only through inheritance
+
+Public
+  -accessible throughout the project
+
+Access specifier for constructor
+  
+Private : if constructor is made private then it's object can be created in same class
+
+Default:
+Object created in same class and same package
+
+Protected:
+   same as default
+
+Public:
+ objects created any where 
+
+Note: constructor never inherited
+
+A class can be default or public never private or protected
+
+Encapsulation
+ - wrapping of variable inside the method so direct access to the variable not allowed.
+	- variable need to private.
+    -  using getters and setters we access the variable because methods are public.
+
+public class A {
+	
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+
+}
+
+
+public class B {
+	
+	public static void main(String[] args)
+	{
+		A a = new A();
+		//System.out.println(a.name); // can't access private variable outside the class
+	   a.setName("kiran");
+	   System.out.println(a.getName());
+	}
+
+}
+
+O/P:
+Kiran
+
+Inheritance - part 2
+
+- Every class in java are sub class of Object class.
+
+super keyword
+ - used to access the members of parent class.
+	- without inheritance super keyword cannot be used.
+	- super keyword cannot be used in static method.
+	- both parent static and non static members can be access in child class using super keyword.
+	- We can call constructor of super class using super keyword.
+
+public class A1 {
+	
+	int i = 10;
+	static int j = 20;
+	
+	public void test1()
+	{
+		System.out.println("non static method: ");
+	}
+	
+	public static void test2()
+	{
+		System.out.println("static method: ");
+	}
+
+}
+
+
+package com.superkeyword;
+
+public class B2 extends A1{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B2 b = new B2();
+	//	System.out.println(super.i); // cannot use super in static method
+		b.test();
+		
+
+	}
+
+	private void test() {
+		// TODO Auto-generated method stub
+		System.out.println(super.i);
+		System.out.println(super.j);
+		super.test1();
+		super.test2();
+	}
+
+}
+
+o/p:
+10
+20
+non static method: 
+static method: 
+
+
+Note: super keyword is automatically placed by JVM in child class without no args constructor
+
+public class A3 {
+	
+	A3()
+	{
+		System.out.println("parent constructor");
+	}
+
+}
+
+public class B3 extends A3{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		B3 b = new B3();
+		
+	}
+
+	B3() {
+		// TODO Auto-generated method stub
+		super();
+		
+	}
+
+}
+
+o/p:
+parent constructor
+
+Constructor never inherited
+
+	- By default empty default constructor added and empty super keyword added
+    - super keyword cannot be second statement in child constructor while accessing parent constructor 
+ - for accessing variables and methods can be second statement
+
+this	super
+Accessing members of same class	Accessing members of parent class
+	
+
+  - super and this cannot be used in same constructor because both keywords need to be first statement
+
+
+
+
+
+ 
+
+
+
 
