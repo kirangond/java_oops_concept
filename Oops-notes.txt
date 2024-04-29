@@ -2513,7 +2513,7 @@ Regular expression - import com.package1.* -  import everything from package pac
 
 Access Specifier 
   - security
-  - access sepcifier applied on class members 
+  - access specifier applied on class members to provide security
   
   private
   default

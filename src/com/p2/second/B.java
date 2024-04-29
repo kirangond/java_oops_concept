@@ -8,6 +8,8 @@ public class B extends A{
 		// TODO Auto-generated method stub
          A a = new A();
          a.first();
+         
+         
 	}
 
 }
