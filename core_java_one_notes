@@ -1085,6 +1085,17 @@ Accessing members of same class	Accessing members of parent class
 	
 
   - super and this cannot be used in same constructor because both keywords need to be first statement
+  
+  Interfaces
+ - Incomplete method (no implementaions)
+ - abstraction achieved using interface
+	- Interface are 100% incomplete or abstract in nature
+
+public interface A {
+	
+	public void test();
+
+}
 
 
 
