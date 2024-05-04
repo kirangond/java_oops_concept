@@ -1086,14 +1086,182 @@ Accessing members of same class	Accessing members of parent class
 
   - super and this cannot be used in same constructor because both keywords need to be first statement
   
-  Interfaces
+Interfaces
  - Incomplete method (no implementaions)
  - abstraction achieved using interface
 	- Interface are 100% incomplete or abstract in nature
+	- We use implements keyword to inherit methods from parent interface 
+	- Variables should be static and final (interface A { int i=10;})  //by default static and final
+
+    - abstract keyword help us to define method is in-complete.
+ -  usage of abstract to create incomplete method is optional 
+	- By default abstract added 
+
+	- Class consists of complete method 
 
 public interface A {
 	
 	public void test();
+
+}
+
+public class B implements A{
+
+	@Override
+	public void test()
+	{
+		System.out.println(500);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		B b = new B();
+		b.test();
+		
+
+	}
+
+	
+
+}
+
+o/p:
+500
+
+public interface A2 {
+	
+	public void test();
+	public abstract void test1();
+	abstract public void test2();
+	
+
+}
+
+Class --- > class = extends keyword
+Interface ---> class = implements keyword
+Interface ---> interface = extends keyword 
+
+ interface supports multiple inheritance -- yes
+
+Interface A
+{
+}
+
+Interface B extends A
+{
+
+}
+
+Interface C extends A, B
+{
+}
+
+
+Class can implement multiple inheritance
+
+Class D implements A, B, C
+{
+}
+
+Can class extends another class and implements interface at same time - yes
+Order squence important - first extends then implements 
+
+Abstraction:
+ - hiding of implementation details
+ - In java we achieve abstraction using interface and abstract class
+
+Why to use interface ? For good design of software
+
+	- Unimplemented methods used in child class 
+
+
+Final keyword
+ - variable, method and class
+
+Constant 
+  - value remains same
+  - reinitialize not possible
+
+final int i = 10;
+i=100; //error
+
+If variable made final reinitialize of variable is not possible.
+	- If static and non static variable made final then initlaization that variable is mandtory
+	- Final on method we can't override that method.
+	- If class made final then inheritance of class not possible
+
+
+Marker interface:
+  - an empty interface consists nothing in it
+
+interface A
+{
+
+}
+
+-lambda expression
+   - alternate way to complete incomplete method from interface to class.
+   - from java 8 onwards 
+
+interface A
+{
+    public void test();
+}
+
+class HelloWorld {
+    public static void main(String[] args) {
+        A a = () -> System.out.println("100");
+        a.test();
+    }
+}
+
+o/p:
+100
+
+Insert multiple statements in it
+
+Public class B
+{
+
+A a = () ->
+{
+Sysout("100");
+Sysut("200");
+}
+a.test();
+}
+
+o/p:
+100
+200
+
+
+If having arguments in it
+
+Interface A
+{
+Public void test(int x);
+}
+
+Public class B
+{
+p.s.v.m()
+{
+   A a = (int x) ->
+{
+Sysout("100");
+Sysut("200");
+
+}
+a.test();
+}
+}
+
+o/p:
+100
+200
+
+
 
 }
 
