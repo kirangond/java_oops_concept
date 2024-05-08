@@ -21,8 +21,8 @@ public class A2 {
 			} catch (InSufficientFunds e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-				System.out.println(e);
-				System.out.println("Low Balance!");
+//				System.out.println(e);
+		//	System.out.println("Low Balance!");
 			}
 		}
 

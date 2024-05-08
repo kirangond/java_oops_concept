@@ -1266,6 +1266,225 @@ o/p:
 }
 
 
+	- Multiple inheritance for interface - yes
+	- Abstract class supports multiple inheritance - no
+	- For class multiple inheritance is not possible
+	
+java 8 features
+1. lamda expression
+2. complete method in interface 
+3. Functional Interface 
+
+
+Exception
+ - unexpected event that occurs and halt the program execution(bad user experience)
+	- If exception occurs none of the further lines will ger executed.
+
+public class A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			int x = 10;
+			int y = 20;
+			int z = x/y;
+			System.out.println(100);
+		} catch (Exception e) {
+			// TODO: handle exception
+			//System.out.println(e);
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+o/p:
+100  (no issues)
+
+
+Exception handling:
+  - to handle exception we use try and catch block
+ - if any lines in try block causes exception then try block create exception object and object address try block give to catch block. 
+	- Catch block will suppress the exception and further code execution happens  
+ try
+{
+}catch(Exception e)
+{
+}
+
+	- Keywords predefined meaning
+     -    
+
+
+A.java -------> compile ------> A.class ------> run ---->o/p
+
+                                                                                                              Throwable
+
+
+
+
+                                               Error                                                                                                                                                                                   Exception
+
+
+
+                                                                                                                                                                     Compile time exception                                                                                    Run time exception
+                                                                                                                   FileNotFoundException,SQLException,IOException,ClassNotFoundException                      Arithmetic,NullPointer,NumberFormat
+                                                                                                                                                                                                                                                                                 ArrayIndexOutOf, ClassCastException
+
+
+ArithmeticException - invalid mathematical operation.
+NumberFormatException - invalid conversion causes
+NullPointerException - when class member accessed with null reference variable we get null pointer exception. 
+
+	- Can we write multiple catch block - yes
+	- Child - parent exception need to be caught (else catch block is un reachable) (ArithmeticException, Exception, Throwable)
+	- We can catch multiple exception at a time - catch (NullPointerException | ArithmeticException e)
+
+public class A3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			int i = 10/0;
+			String str = "kiran";
+			Integer.parseInt(str);
+			System.out.println(str);
+
+		} catch (ArithmeticException a) {
+			// TODO: handle exception
+			System.out.println(a);
+		} catch (NumberFormatException n) {
+			// TODO: handle exception
+			System.out.println(n);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		} catch (Throwable t) {
+			// TODO: handle exception
+			System.out.println(t);
+		}
+      System.out.println(100);
+	}
+
+}
+
+o/p:
+java.lang.ArithmeticException: / by zero
+100
+
+Finally block
+  - extension of catch block.
+ - exception happens or not finally block should execute.
+
+When to use
+  - when we open a file need to close for better performance
+ - any connections need to be closed. 
+
+public class Finally {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			int i = 10;
+			int j = 0;
+			int k = i/j;
+			System.out.println(100);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+		finally
+		{
+			System.out.println(500);
+		}
+
+	}
+
+}
+
+o/p:
+java.lang.ArithmeticException: / by zero
+500
+
+throw and throws keyword
+ - throws can be applied on only method not on variable and class
+ - calling statement method should be surrounded by try and catch because exception given to it.
+	- If any exception occurs in method then the exception will be passed on calling statement of method.
+	- throws keyword will raise the exception it will not handle the exception
+	- we can handle expection using try and catch block other way using throws keyword
+
+public class ThrowKeywordExample {
+
+	public static void main(String[] args) throws ArithmeticException{
+		// TODO Auto-generated method stub
+		
+		System.out.println("starts the program");
+		
+		System.out.println(10/0);
+		
+		System.out.println("ends the program");
+
+	}
+
+}
+
+o/p:
+starts the program
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.exception.customexception.ThrowKeywordExample.main(ThrowKeywordExample.java:10)
+
+
+throw keyword:
+	- Help us to create customized exception.
+	- Create customized class with extending Throwable class
+	- 
+
+package com.throwkeyword.throwskeyword;
+
+public class InSufficientFunds extends Throwable{
+
+}
+
+
+import java.util.Scanner;
+
+public class A2 {
+
+	public static void main(String[] args) {
+		
+		int balance = 500;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the amount: ");
+		int amount = sc.nextInt();
+		if(balance>amount)
+		{
+			System.out.println("Please collect the cash: ");
+		}
+		else
+		{
+			try {
+				throw new InSufficientFunds();
+			} catch (InSufficientFunds e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+
+			
+			}
+		}
+
+	}
+
+}
+
+o/p:
+ 
+Enter the amount: 
+700
+com.throwkeyword.throwskeyword.InSufficientFunds
+at com.throwkeyword.throwskeyword.A2.main(A2.java:20)
 
 
 
