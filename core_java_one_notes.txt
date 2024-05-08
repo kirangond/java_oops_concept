@@ -1413,9 +1413,78 @@ throw and throws keyword
  - throws can be applied on only method not on variable and class
  - calling statement method should be surrounded by try and catch because exception given to it.
 	- If any exception occurs in method then the exception will be passed on calling statement of method.
-	- 
-	  
+	- throws keyword will raise the exception it will not handle the exception
+	- we can handle expection using try and catch block other way using throws keyword
 
+public class ThrowKeywordExample {
+
+	public static void main(String[] args) throws ArithmeticException{
+		// TODO Auto-generated method stub
+		
+		System.out.println("starts the program");
+		
+		System.out.println(10/0);
+		
+		System.out.println("ends the program");
+
+	}
+
+}
+
+o/p:
+starts the program
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.exception.customexception.ThrowKeywordExample.main(ThrowKeywordExample.java:10)
+
+
+throw keyword:
+	- Help us to create customized exception.
+	- Create customized class with extending Throwable class
+	- 
+
+package com.throwkeyword.throwskeyword;
+
+public class InSufficientFunds extends Throwable{
+
+}
+
+
+import java.util.Scanner;
+
+public class A2 {
+
+	public static void main(String[] args) {
+		
+		int balance = 500;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the amount: ");
+		int amount = sc.nextInt();
+		if(balance>amount)
+		{
+			System.out.println("Please collect the cash: ");
+		}
+		else
+		{
+			try {
+				throw new InSufficientFunds();
+			} catch (InSufficientFunds e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+
+			
+			}
+		}
+
+	}
+
+}
+
+o/p:
+ 
+Enter the amount: 
+700
+com.throwkeyword.throwskeyword.InSufficientFunds
+at com.throwkeyword.throwskeyword.A2.main(A2.java:20)
 
 
 
