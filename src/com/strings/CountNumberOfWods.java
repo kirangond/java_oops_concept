@@ -17,6 +17,11 @@ public class CountNumberOfWods {
 		{
 			System.out.println(x);
 		}
+		
+		String x = " kiran ";
+		System.out.println(x.trim());//remove white spaces
+		String y = " kiran is   name";
+		System.out.println(y.trim());
 
 	}
 
