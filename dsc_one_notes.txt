@@ -1,0 +1,70 @@
+String: 
+	- String class there is no in built reverse method in it
+	- str.length() - It will print the length of string 
+	- str.charAt(2) - It will print the character at that index
+     -  str.split(" ");    - based on " " this it will split the word and store in string array
+   - str.split(" ") - based on " " this it will split the word 
+ - x.trim() - it will remove white spaces at only beginning and end
+
+
+
+
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "kiran is my name"; 
+		System.out.println(str.length()); //It will print the length of string 
+		System.out.println(str.charAt(2)); //It will print the character at that index
+		
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			System.out.print(str.charAt(i));
+		}
+
+	}
+
+}
+
+o/p:
+16
+r
+eman ym si narik
+
+
+public class CountNumberOfWods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = " kiran is my name ";
+		System.out.println(str.length()); //including white space
+		System.out.println(str.split(" ")); //based on " " this it will split the word and store in string array
+		String[] split = str.split(" "); // If white spaces it will print 5 hence use trim to remove white spaces
+		System.out.println(split.length);
+		
+		String[] split2 = str.trim().split(" ");
+		System.out.println(split2.length);
+		for(String x:split2)
+		{
+			System.out.println(x);
+		}
+
+	}
+
+}
+
+o/p:
+18
+[Ljava.lang.String;@cac736f
+5
+4
+kiran
+is
+my
+name
+
+	
+
+
