@@ -1,6 +1,6 @@
 package com.strings;
 
-//String clas there is no in built reverse method in it
+//String class there is no in built reverse method in it
 public class StringReverse {
 
 	public static void main(String[] args) {
