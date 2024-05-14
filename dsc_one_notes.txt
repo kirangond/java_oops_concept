@@ -5,6 +5,8 @@ String:
      -  str.split(" ");    - based on " " this it will split the word and store in string array
    - str.split(" ") - based on " " this it will split the word 
  - x.trim() - it will remove white spaces at only beginning and end
+ - Strings are immutable 
+
 
 
 
@@ -63,8 +65,78 @@ o/p:
 kiran
 is
 my
-name
+Name
+
+
+Printing square:
+public class PrintingSquare {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for(int i=0;i<5;i++){
+			for(int j=0;j<5;j++)
+			{
+			System.out.print("*");
+			}
+			System.out.print("\n");
+		}
+
+	}
+
+}
+
+o/p:
+*****
+*****
+*****
+*****
+*****
+
+Mutable:
+ - will change
+	- Object content(properties) can be changed
+	- Mutable is something where in class object properties keeps on changing
+
+Immutable:
+ - cannot change
+ - class once it's object is created then it's state cannot be altered
+
+Steps to create immutable classes:
+package com.strings;
+//making the class as final
+public final class ImMutable {
+	//creating a final variable so value should not re initilzied
+          private final int age;
+          private final String name;
+          //setting the value through constructor
+          public ImMutable(int age, String name) {
+			this.age = age;
+			this.name = name;
+		}
+          //there will no setter will be alloweded only getter
+          public int getAge() {
+      		return age;
+      	}
+
+      	public String getName() {
+      		return name;
+      	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ImMutable a = new ImMutable(10,"kiran");
+	
+		
+		
+		
+	}
 
 	
 
+}
 
+
+
+
+	
