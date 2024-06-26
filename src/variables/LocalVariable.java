@@ -9,8 +9,19 @@ public class LocalVariable {
 		obj.add();
 		obj.sum();
 		obj.diff(5,4);
+		obj.mul(2,3);
 		
 		
+	}
+
+	private void mul(int i, int j) {
+		// TODO Auto-generated method stub
+		//int i = 10; // duplicate local variable we will get error
+		System.out.println("i: " + i);
+		System.out.println("i will update: " + i*3);
+		i = i*4; //it got updated
+		int result = i * j;
+		System.out.println(result);
 	}
 
 	private void diff(int i, int j) {

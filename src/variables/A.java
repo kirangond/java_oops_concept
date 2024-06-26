@@ -17,7 +17,7 @@ public class A {
 		System.out.println("j: "+j);
 		//System.out.println(A.k); //Cannot make a static reference to the non-static field A.k
        A a = new A();
-       System.out.println(a.k);
+       System.out.println(a.k); // Cannot make a static reference to the non-static field k (If I'm trying to access variable without creating object)
        A a1 = new A();
        a1.k=10;
        System.out.println(a1.k);
