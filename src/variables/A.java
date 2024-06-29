@@ -1,5 +1,6 @@
 package variables;
 
+//merge code from june last to june branch
 //static variable belongs to class and accessed by using classname.variablename
 //non static variable belongs to object and access using only objects
 //static value can be changed
