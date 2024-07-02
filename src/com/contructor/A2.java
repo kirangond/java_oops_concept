@@ -1,5 +1,6 @@
 package com.contructor;
 
+//valid for constructor overloading as same number of arguments with different data type
 public class A2 {
 
 	A2(int i)
