@@ -8,6 +8,7 @@ public class Scope {
          {
         	 String var = "red";
          }
+       
          System.out.println(var);
 
 	}
