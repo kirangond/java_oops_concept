@@ -17,6 +17,7 @@ public class LocalVariable {
 	private void mul(int i, int j) {
 		// TODO Auto-generated method stub
 		//int i = 10; // duplicate local variable we will get error
+		
 		System.out.println("i: " + i);
 		System.out.println("i will update: " + i*3);
 		i = i*4; //it got updated
