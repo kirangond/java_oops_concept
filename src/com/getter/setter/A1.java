@@ -12,7 +12,7 @@ public class A1 {
 		// TODO Auto-generated method stub
 
 		A1 a = new A1();
-		a.setCompany("lumen");
+		a.setCompany("change    :  lumen");
 		System.out.println(a.getCompany());
 	}
 
