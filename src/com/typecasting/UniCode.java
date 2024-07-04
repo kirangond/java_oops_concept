@@ -10,6 +10,9 @@ public class UniCode {
 		System.out.println(j);
 		int k = '0';
 		System.out.println(k);
+		
+		char c = 'a';
+		System.out.println("c: " + c);
 
 	}
 

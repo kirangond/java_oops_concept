@@ -10,15 +10,15 @@ public class This1 {
 
 	}
 
-//	public void test() {
-//	 System.out.println(this);
-//		
-//	}
-	
 	public void test() {
-		int j = 10;
-		 System.out.println(this.j);
-			
-		}
+	 System.out.println(this);
+		
+	}
+	
+//	public void test() {
+//		int j = 10;
+//		// System.out.println(this.j); //gives error 
+//			
+//		}
 
 }
