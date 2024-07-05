@@ -6,4 +6,6 @@ public class B {
    B b = new B ();
    
    A a = new A();
+   
+ 
 }
