@@ -12,7 +12,7 @@ public class Array2D {
 		a[1][2]=20;
 		System.out.println(a.length); //will give row length
 		System.out.println(a[0].length); //will give column length it should be less than total number of rows
-        System.out.println(a.length*a[0].length);
+        System.out.println(a.length*a[0].length); //row into column length
 		 for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				System.out.println(a[i][j]);

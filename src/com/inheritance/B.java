@@ -10,6 +10,7 @@ public class B extends A {
 		System.out.println(b.i);
         b.i = 100;
         System.out.println(b.i);
+        System.out.println(b1.i);
         b.test();
         
        

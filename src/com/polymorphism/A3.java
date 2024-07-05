@@ -1,5 +1,7 @@
 package com.polymorphism;
 
+//method over loading
+//without inheritance we can achieve it
 public class A3 {
 
 	public static void main(String[] args) {
