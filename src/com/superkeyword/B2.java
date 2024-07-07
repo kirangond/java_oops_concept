@@ -1,7 +1,8 @@
 package com.superkeyword;
 
 public class B2 extends A1{
-
+	
+	int j = 100;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		B2 b = new B2();
