@@ -11,6 +11,7 @@ public class B extends A{
 		// TODO Auto-generated method stub
 		
 		B b = new B();
+		System.out.println(System.getProperty("java.version"));
 		b.test();
         b.test2();
 		
