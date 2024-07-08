@@ -13,15 +13,19 @@ public class A {
 			int z = x/y;
 			System.out.println(100);
 			
-		}catch (ArithmeticException e) {
-			// TODO: handle exception
-			System.out.println(e);
-			
-		} 
+		}
+//		catch (ArithmeticException e) {
+//			// TODO: handle exception
+//			System.out.println("Exception will throw: ");
+//			System.out.println(e);
+//			System.out.println("Exception  thrown: " + e);
+//			
+//		} 
 		catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("we will get exception: " + error_message + e);
-			//e.printStackTrace();
+//			System.out.println("we will get exception: " + error_message + e);
+			//in depth message it will give
+			e.printStackTrace();
 		}
 
 	}
