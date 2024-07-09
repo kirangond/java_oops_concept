@@ -6,7 +6,8 @@ public class A3 {
 		// TODO Auto-generated method stub
 
 		try {
-			int i = 10/0;
+//			int i = 10/0;
+			System.out.println("it will not execute after exception occurs: ");
 			String str = "kiran";
 			Integer.parseInt(str);
 			System.out.println(str);

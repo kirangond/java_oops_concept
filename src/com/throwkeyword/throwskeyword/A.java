@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class A {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		//the calling method statement should be surrounded withing try and catch block
 		A a = new A();
