@@ -15,6 +15,10 @@ public class IsEquals1 {
 		System.out.println(s3==s4);
 		System.out.println(s3.equals(s4));
 		
+		String s5 = new String("kiran");
+		System.out.println(s5==s1);
+		System.out.println(s5.equals(s1));
+		
 	}
 
 }

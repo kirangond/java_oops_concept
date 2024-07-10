@@ -4,7 +4,7 @@ public final class ImMutable {
 	//creating a final variable so value should not re initilzied
           private final int age;
           private final String name;
-          //setting the value through constructor
+          //setting the value through constructor 
           public ImMutable(int age, String name) {
 			this.age = age;
 			this.name = name;
@@ -21,7 +21,8 @@ public final class ImMutable {
 		// TODO Auto-generated method stub
 
 		ImMutable a = new ImMutable(10,"kiran");
-	
+	 System.out.println(a.getAge());
+	 System.out.println(a.getName());
 		
 		
 		
