@@ -1502,3 +1502,5 @@ Jan 8
 Jan 9
 
 Jan 10
+
+Jan 11 Access specifier, Encapsulation 
