@@ -1506,3 +1506,5 @@ Jan 10
 Jan 11 Access specifier, Encapsulation 
 
 Jan 12 Interface, abstraction
+
+Jan 13 abstract class and lambda expression 
