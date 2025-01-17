@@ -1510,3 +1510,5 @@ Jan 12 Interface, abstraction
 Jan 13 abstract class and lambda expression 
 
 Jan 14 Exception 
+
+Jan 16 Travel to Bengaluru 
